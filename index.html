@@ -1,0 +1,1267 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+	<head>
+		<title>My JSP 'index.jsp' starting page</title>
+		<meta http-equiv="pragma" content="no-cache">
+		<meta http-equiv="cache-control" content="no-cache">
+		<meta http-equiv="expires" content="0">
+		<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
+		<meta http-equiv="description" content="This is my page">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<script type="text/javascript" src="ext.js"></script>
+		<style>
+		.td{
+			font-size: 38px;
+			font-family: Arial Black;
+			font-weight: bold;
+			color: white;
+			text-align: center;
+		}
+		.list{
+			font-size: 12px;
+			color: white;
+			text-align: center;
+		}
+		.tdname{
+			font-size: 18px;
+			color: #EAFF00;
+			font-weight: bold;
+			text-align: center;
+		}
+		.td2{
+			font-size: 77px;
+			font-family: Arial Black;
+			font-weight: bold;
+			color: white;
+			text-align: center;
+		}
+		.tdname2{
+			font-size: 36px;
+			color: #EAFF00;
+			font-weight: bold;
+			text-align: center;
+		}
+		.td3{
+			font-size: 82px;
+			font-family: Arial Black;
+			font-weight: bold;
+			color: white;
+			text-align: center;
+		}
+		.tdname3{
+			font-size: 31px;
+			color: #EAFF00;
+			font-weight: bold;
+			text-align: center;
+		}
+		.body{
+			background-image: url("bg.jpg");
+			background-position:top center;
+			background-repeat: no-repeat;
+		}
+		
+		.tablepanels {position: absolute;
+			/*margin-top:34px;top: 140px;position:relative;*/
+		}
+		.tablepanels #tablemenu { line-height:24px; height:24px; position:absolute; top:-24px; }
+		.tablepanels #tablemenu a:link, .tablepanels #tablemenu a:visited { 
+			display:block; padding:0px 15px; float:left; margin-right:3px; background-color:#EAFF00; 
+			border-bottom:1px solid #cccccc;
+		}
+		.tablepanels #tablemenu a:hover { background-color:#c4c4c4; text-decoration:none; }
+		.tablepanels #tablemenu a.hover:link, .tablepanels #tablemenu a.hover:visited { 
+			background-color:#f4f4f4; border:1px solid #cccccc; border-bottom:none; font-weight:bold; 
+		}
+		/*.tablepanels #tablebody { clear:both; border:1px solid #EAFF00;}*/
+		.tablepanels #tablebody div { padding:-10px -5px; }
+	</style>
+	</head>
+	<body topmargin="0" leftmargin="0" bgcolor="red">
+		<table border="0" align="center" class="body" height="100%" width="1024" >
+			<tr>
+				<td height="400" id="body">
+					<div class="tablepanels" id="table">
+						<div id="tablemenu">
+							<a href="javascript:;" onclick="displayTab(0);Ext.get('name').hide();Ext.get('img').hide();">抽奖名单</a>
+							<a href="javascript:;" onclick="displayTab(1);Ext.get('name').show();Ext.get('img').show();Ext.getDom('image').src='4.gif'">纪念奖</a>
+							<a href="javascript:;" onclick="displayTab(2);Ext.get('name').show();Ext.get('img').show();Ext.getDom('image').src='3.gif'">三等奖</a>
+							<a href="javascript:;" onclick="displayTab(3);Ext.get('name').show();Ext.get('img').show();Ext.getDom('image').src='1.gif'">二等奖</a>
+							<a href="javascript:;" onclick="displayTab(4);Ext.get('name').show();Ext.get('img').show();Ext.getDom('image').src='2.gif'">一等奖</a>
+							<a href="javascript:;" onclick="displayTab(5);Ext.get('name').show();Ext.get('img').hide();">特别奖</a>
+						</div>
+						<div id="tablebody">
+							<div>
+								<table cellspacing="3" border="1" cellpadding="0" align="center" width="855px" class="list">
+									<tr>
+										<td>001</td><td>廖文明</td>
+										<td>002</td><td>廖建银</td>
+										<td>003</td><td>廖学平</td>
+										<td>004</td><td>廖筱华</td>
+										<td>005</td><td>廖梦刚</td>
+								    	<td>006</td><td>廖丽君</td>
+								    	<td>007</td><td>廖  平</td>
+								    	<td>008</td><td>廖  珂</td>
+								    	<td>009</td><td>廖伟华</td>
+								    	<td>010</td><td>廖常梅</td>
+							    	</tr>
+							    	<tr>
+								    	<td>011</td><td>廖其毓</td>
+								    	<td>012</td><td>廖瑞林</td>
+								    	<td>013</td><td>廖  影</td>
+								    	<td>014</td><td>廖  平</td>
+								    	<td>015</td><td>廖  丽</td>
+								    	<td>016</td><td>廖慧真</td>
+								    	<td>017</td><td>廖  梅</td>
+								    	<td>018</td><td>廖  校</td>
+								    	<td>019</td><td>廖塔基</td>
+								    	<td>020</td><td>廖英清</td>
+							    	</tr>
+							    	<tr>
+								    	<td>021</td><td>廖  丽</td>
+								    	<td>022</td><td>廖  梅</td>
+								    	<td>023</td><td>廖  宇</td>
+								    	<td>024</td><td>廖康敏</td>
+								    	<td>025</td><td>廖  峰</td>
+								    	<td>026</td><td>廖福民</td>
+								    	<td>027</td><td>廖作勇</td>
+								    	<td>028</td><td>廖  杰</td>
+								    	<td>029</td><td>廖宏波</td>
+								    	<td>030</td><td>廖  湛</td>
+							    	</tr>
+							    	<tr>
+								    	<td>031</td><td>廖浩里</td>
+								    	<td>032</td><td>廖劲草</td>
+								    	<td>033</td><td>廖  捷</td>
+								    	<td>034</td><td>廖军强</td>
+								    	<td>035</td><td>廖进林</td>
+								    	<td>036</td><td>廖琪昌</td>
+								    	<td>037</td><td>廖水业</td>
+								    	<td>038</td><td>廖锦伟</td>
+								    	<td>039</td><td>廖云丽</td>
+								    	<td>040</td><td>廖  平</td>
+							    	</tr>
+							    	<tr>
+								    	<td>041</td><td>廖观全</td>
+								    	<td>042</td><td>廖阳文</td>
+								    	<td>043</td><td>廖文举</td>
+								    	<td>044</td><td>廖功君</td>
+								    	<td>045</td><td>廖永华</td>
+								    	<td>046</td><td>廖文政</td>
+								    	<td>047</td><td>廖平生</td>
+								    	<td>048</td><td>廖  欣</td>
+								    	<td>049</td><td>廖应坤</td>
+								    	<td>050</td><td>廖庆明</td>
+							    	</tr>
+							    	<tr>
+								    	<td>051</td><td>廖一钒</td>
+								    	<td>052</td><td>廖建忠</td>
+								    	<td>053</td><td>廖寅晓</td>
+								    	<td>054</td><td>廖保国</td>
+								    	<td>055</td><td>廖  洁</td>
+								    	<td>056</td><td>廖  毅</td>
+								    	<td>057</td><td>廖  钢</td>
+								    	<td>058</td><td>廖洪钟</td>
+								    	<td>059</td><td>廖如锦</td>
+								    	<td>060</td><td>廖平华</td>
+							    	</tr>
+							    	<tr>
+								    	<td>061</td><td>廖世民</td>
+								    	<td>062</td><td>廖  颖</td>
+								    	<td>063</td><td>廖培竞</td>
+								    	<td>064</td><td>廖北辰</td>
+								    	<td>065</td><td>廖  磊</td>
+								    	<td>066</td><td>廖  冰</td>
+								    	<td>067</td><td>廖思讯</td>
+								    	<td>068</td><td>廖仲连</td>
+								    	<td>069</td><td>廖  章</td>
+								    	<td>070</td><td>廖  丽</td>
+							    	</tr>
+							    	<tr>
+								    	<td>071</td><td>廖  瑜</td>
+								    	<td>072</td><td>廖  健</td>
+								    	<td>073</td><td>廖  伟</td>
+								    	<td>074</td><td>廖  飞</td>
+								    	<td>075</td><td>廖  焕</td>
+								    	<td>076</td><td>廖小龙</td>
+								    	<td>077</td><td>廖苗江</td>
+								    	<td>078</td><td>廖钢成</td>
+								    	<td>079</td><td>廖远惠</td>
+								    	<td>080</td><td>廖相华</td>
+							    	</tr>
+							    	<tr>
+								    	<td>081</td><td>廖慈琼</td>
+								    	<td>082</td><td>廖  川</td>
+								    	<td>083</td><td>廖明宝</td>
+								    	<td>084</td><td>廖  利</td>
+								    	<td>085</td><td>廖玉容</td>
+								    	<td>086</td><td>廖小宁</td>
+								    	<td>087</td><td>廖红卫</td>
+								    	<td>088</td><td>廖勇红</td>
+								    	<td>089</td><td>廖  寿</td>
+								    	<td>090</td><td>廖健春</td>
+							    	</tr>
+							    	<tr>
+								    	<td>091</td><td>廖  涛</td>
+								    	<td>092</td><td>廖桂添</td>
+								    	<td>093</td><td>廖正旭</td>
+								    	<td>094</td><td>廖延香</td>
+								    	<td>095</td><td>廖江滨</td>
+								    	<td>096</td><td>廖珊珊</td>
+								    	<td>097</td><td>廖  君</td>
+								    	<td>098</td><td>廖  薇</td>
+								    	<td>099</td><td>廖  活</td>
+								    	<td>100</td><td>廖  珣</td>
+							    	</tr>
+							    	<tr>
+								    	<td>101</td><td>廖冬梅</td>
+								    	<td>102</td><td>廖  炜</td>
+								    	<td>103</td><td>廖臣镇</td>
+								    	<td>104</td><td>廖小苑</td>
+								    	<td>105</td><td>廖  彬</td>
+								    	<td>106</td><td>廖晓芳</td>
+								    	<td>107</td><td>廖  婧</td>
+								    	<td>108</td><td>廖先艳</td>
+								    	<td>109</td><td>廖梦谨</td>
+								    	<td>110</td><td>廖效云</td>
+							    	</tr>
+							    	<tr>
+								    	<td>111</td><td>廖  健</td>
+								    	<td>112</td><td>廖乐明</td>
+								    	<td>113</td><td>廖柯敏</td>
+								    	<td>114</td><td>廖  晶</td>
+								    	<td>115</td><td>廖润香</td>
+								    	<td>116</td><td>廖田有</td>
+								    	<td>117</td><td>廖  琪</td>
+								    	<td>118</td><td>廖远金</td>
+								    	<td>119</td><td>廖瀚卿</td>
+								    	<td>120</td><td>廖  松</td>
+							    	</tr>
+							    	<tr>
+								    	<td>121</td><td>廖凌峰</td>
+								    	<td>122</td><td>廖前芳</td>
+								    	<td>123</td><td>廖义峰</td>
+								    	<td>124</td><td>廖  腾</td>
+								    	<td>125</td><td>廖  镇</td>
+								    	<td>126</td><td>廖  笛</td>
+								    	<td>127</td><td>廖  雯</td>
+								    	<td>128</td><td>廖惠燕</td>
+								    	<td>129</td><td>廖  聪</td>
+								    	<td>130</td><td>廖  峰</td>
+							    	</tr>
+							    	<tr>
+								    	<td>131</td><td>廖文婧</td>
+								    	<td>132</td><td>廖  琼</td>
+								    	<td>133</td><td>廖龙英</td>
+								    	<td>134</td><td>廖  波</td>
+								    	<td>135</td><td>廖  珍</td>
+								    	<td>136</td><td>廖银芳</td>
+								    	<td>137</td><td>廖  松</td>
+								    	<td>138</td><td>廖雅娟</td>
+								    	<td>139</td><td>廖秀珍</td>
+								    	<td>140</td><td>廖敏真</td>
+							    	</tr>
+							    	<tr>
+								    	<td>141</td><td>廖  璠</td>
+								    	<td>142</td><td>廖晓芸</td>
+								    	<td>143</td><td>廖红梅</td>
+								    	<td>144</td><td>廖  芳</td>
+								    	<td>145</td><td>廖伟丽</td>
+								    	<td>146</td><td>廖莉娜</td>
+								    	<td>147</td><td>廖  颖</td>
+								    	<td>148</td><td>廖萌辉</td>
+								    	<td>149</td><td>廖  哲</td>
+								    	<td>150</td><td>廖开军</td>
+							    	</tr>
+							    	<tr>
+								    	<td>151</td><td>廖  佳</td>
+								    	<td>152</td><td>廖方波</td>
+								    	<td>153</td><td>廖  欣</td>
+								    	<td>154</td><td>廖若晨</td>
+								    	<td>155</td><td>廖昌松</td>
+								    	<td>156</td><td>廖  红</td>
+								    	<td>157</td><td>廖学成</td>
+								    	<td>158</td><td>廖建伟</td>
+								    	<td>159</td><td>廖  猛</td>
+								    	<td>160</td><td>廖  媛</td>
+							    	</tr>
+							    	<tr>
+								    	<td>161</td><td>廖锦怡</td>
+								    	<td>162</td><td>廖秋艳</td>
+								    	<td>163</td><td>廖福星</td>
+								    	<td>164</td><td>廖香娟</td>
+								    	<td>165</td><td>廖  虹</td>
+								    	<td>166</td><td>廖  礼</td>
+								    	<td>167</td><td>廖柏树</td>
+								    	<td>168</td><td>廖银钢</td>
+								    	<td>169</td><td>廖媛媛</td>
+								    	<td>170</td><td>廖志深</td>
+							    	</tr>
+								    <tr>
+								    	<td>171</td><td>廖泽林</td>
+								    	<td>172</td><td>廖  毅</td>
+								    	<td>173</td><td>廖伟民</td>
+								    	<td>174</td><td>廖晓云</td>
+								    	<td>175</td><td>廖  响</td>
+								    	<td>176</td><td>廖蕾萍</td>
+								    	<td>177</td><td>廖  云</td>
+								    	<td>178</td><td>廖楚佳</td>
+								    	<td>179</td><td>廖强东</td>
+								    	<td>180</td><td>廖  敏</td>
+							    	</tr>
+								    <tr>
+								    	<td>181</td><td>廖剑锋</td>
+								    	<td>182</td><td>廖  峥</td>
+								    	<td>183</td><td>廖琼玉</td>
+								    	<td>184</td><td>廖  海</td>
+								    	<td>185</td><td>廖  宁</td>
+								    	<td>186</td><td>廖艳红</td>
+								    	<td>187</td><td>廖晓明</td>
+								    	<td>188</td><td>廖国喜</td>
+								    	<td>189</td><td>廖文芾</td>
+								    	<td>190</td><td>廖伦罗</td>
+							    	</tr>
+							    	<tr>
+								    	<td>191</td><td>廖志勇</td>
+								    	<td>192</td><td>廖小恒</td>
+								    	<td>193</td><td>廖  静</td>
+								    	<td>194</td><td>廖  潇</td>
+								    	<td>195</td><td>廖梦龙</td>
+								    	<td>196</td><td>廖思健</td>
+								    	<td>197</td><td>廖发明</td>
+								    	<td>198</td><td>廖武涛</td>
+								    	<td>199</td><td>廖鸿春</td>
+								    	<td>200</td><td>廖海兵</td>
+									</tr>
+								</table>
+							</div>
+							<div>
+								<table cellspacing="3" border="1" cellpadding="0" align="center" width="855px" height="217px">
+									<tr>
+										<td id="g00" class="td">000</td>
+										<td id="g01" class="td">000</td>
+										<td id="g02" class="td">000</td>
+										<td id="g03" class="td">000</td>
+										<td id="g04" class="td">000</td>
+										<td id="g05" class="td">000</td>
+										<td id="g06" class="td">000</td>
+										<td id="g07" class="td">000</td>
+										<td id="g08" class="td">000</td>
+										<td id="g09" class="td">000</td>
+									</tr>
+									<tr>
+										<td id="g00name" class="tdname">XXXXXXX</td>
+										<td id="g01name" class="tdname">XXXXXXX</td>
+										<td id="g02name" class="tdname">XXXXXXX</td>
+										<td id="g03name" class="tdname">XXXXXXX</td>
+										<td id="g04name" class="tdname">XXXXXXX</td>
+										<td id="g05name" class="tdname">XXXXXXX</td>
+										<td id="g06name" class="tdname">XXXXXXX</td>
+										<td id="g07name" class="tdname">XXXXXXX</td>
+										<td id="g08name" class="tdname">XXXXXXX</td>
+										<td id="g09name" class="tdname">XXXXXXX</td>
+									</tr>
+									<tr>
+										<td id="g10" class="td">000</td>
+										<td id="g11" class="td">000</td>
+										<td id="g12" class="td">000</td>
+										<td id="g13" class="td">000</td>
+										<td id="g14" class="td">000</td>
+										<td id="g15" class="td">000</td>
+										<td id="g16" class="td">000</td>
+										<td id="g17" class="td">000</td>
+										<td id="g18" class="td">000</td>
+										<td id="g19" class="td">000</td>
+									</tr>
+									<tr>
+										<td id="g10name" class="tdname">XXXXXXX</td>
+										<td id="g11name" class="tdname">XXXXXXX</td>
+										<td id="g12name" class="tdname">XXXXXXX</td>
+										<td id="g13name" class="tdname">XXXXXXX</td>
+										<td id="g14name" class="tdname">XXXXXXX</td>
+										<td id="g15name" class="tdname">XXXXXXX</td>
+										<td id="g16name" class="tdname">XXXXXXX</td>
+										<td id="g17name" class="tdname">XXXXXXX</td>
+										<td id="g18name" class="tdname">XXXXXXX</td>
+										<td id="g19name" class="tdname">XXXXXXX</td>
+									</tr>
+									<tr style="display: none">
+										<td><input id="b00" type="button" value="stop" /></td>
+										<td><input id="b01" type="button" value="stop" /></td>
+										<td><input id="b02" type="button" value="stop" /></td>
+										<td><input id="b03" type="button" value="stop" /></td>
+										<td><input id="b04" type="button" value="stop" /></td>
+										<td><input id="b05" type="button" value="stop" /></td>
+										<td><input id="b06" type="button" value="stop" /></td>
+										<td><input id="b07" type="button" value="stop" /></td>
+										<td><input id="b08" type="button" value="stop" /></td>
+										<td><input id="b09" type="button" value="stop" /></td>
+									</tr>
+									<tr style="display: none">
+										<td><input id="b10" type="button" value="stop" /></td>
+										<td><input id="b11" type="button" value="stop" /></td>
+										<td><input id="b12" type="button" value="stop" /></td>
+										<td><input id="b13" type="button" value="stop" /></td>
+										<td><input id="b14" type="button" value="stop" /></td>
+										<td><input id="b15" type="button" value="stop" /></td>
+										<td><input id="b16" type="button" value="stop" /></td>
+										<td><input id="b17" type="button" value="stop" /></td>
+										<td><input id="b18" type="button" value="stop" /></td>
+										<td><input id="b19" type="button" value="stop" /></td>
+									</tr>
+									<tr>
+										<td align="center" nowrap="nowrap" colspan="10">
+											<input type="button" id="launch" value="启动号码">
+											<input type="button" id="lucky" value="开始抽奖">
+										</td>
+									</tr>
+								</table>
+							</div>
+							<div>
+								<table cellspacing="3" border="1" cellpadding="0" align="center" width="855px" height="217px" >
+									<tr>
+										<td id="t00" class="td">000</td>
+										<td id="t01" class="td">000</td>
+										<td id="t02" class="td">000</td>
+										<td id="t03" class="td">000</td>
+										<td id="t04" class="td">000</td>
+									</tr>
+									<tr>
+										<td id="t00name" class="tdname">XXXXXXX</td>
+										<td id="t01name" class="tdname">XXXXXXX</td>
+										<td id="t02name" class="tdname">XXXXXXX</td>
+										<td id="t03name" class="tdname">XXXXXXX</td>
+										<td id="t04name" class="tdname">XXXXXXX</td>
+									</tr>
+									<tr>
+										<td id="t05" class="td">000</td>
+										<td id="t06" class="td">000</td>
+										<td id="t07" class="td">000</td>
+										<td id="t08" class="td">000</td>
+										<td id="t09" class="td">000</td>
+									</tr>
+									<tr>
+										<td id="t05name" class="tdname">XXXXXXX</td>
+										<td id="t06name" class="tdname">XXXXXXX</td>
+										<td id="t07name" class="tdname">XXXXXXX</td>
+										<td id="t08name" class="tdname">XXXXXXX</td>
+										<td id="t09name" class="tdname">XXXXXXX</td>
+									</tr>
+									<tr style="display: none">
+										<td><input type="button" id="tbtn00" value="stop" /></td>
+										<td><input type="button" id="tbtn01" value="stop" /></td>
+										<td><input type="button" id="tbtn02" value="stop" /></td>
+										<td><input type="button" id="tbtn03" value="stop" /></td>
+										<td><input type="button" id="tbtn04" value="stop" /></td>
+									</tr>
+									<tr style="display: none">
+										<td><input type="button" id="tbtn05" value="stop" /></td>
+										<td><input type="button" id="tbtn06" value="stop" /></td>
+										<td><input type="button" id="tbtn07" value="stop" /></td>
+										<td><input type="button" id="tbtn08" value="stop" /></td>
+										<td><input type="button" id="tbtn09" value="stop" /></td>
+									</tr>
+									<tr>
+										<td align="center" nowrap="nowrap" colspan="10">
+											<input type="button" id="launch2" value="启动号码">
+											<input type="button" id="lucky2" value="开始抽奖">
+										</td>
+									</tr>
+								</table>
+							</div>
+							<div>
+								<table cellspacing="3" border="1" cellpadding="0" align="center" width="855px" height="217px">
+									<tr>
+										<td id="s00" class="td2">000</td>
+										<td id="s01" class="td2">000</td>
+										<td id="s02" class="td2">000</td>
+										<td id="s03" class="td2">000</td>
+										<td id="s04" class="td2">000</td>
+									</tr>
+									<tr>
+										<td id="s00name" class="tdname2">XXXXXXX</td>
+										<td id="s01name" class="tdname2">XXXXXXX</td>
+										<td id="s02name" class="tdname2">XXXXXXX</td>
+										<td id="s03name" class="tdname2">XXXXXXX</td>
+										<td id="s04name" class="tdname2">XXXXXXX</td>
+									</tr>
+									<tr style="display: none">
+										<td><input type="button" id="sbtn00" value="stop" /></td>
+										<td><input type="button" id="sbtn01" value="stop" /></td>
+										<td><input type="button" id="sbtn02" value="stop" /></td>
+										<td><input type="button" id="sbtn03" value="stop" /></td>
+										<td><input type="button" id="sbtn04" value="stop" /></td>
+									</tr>
+									<tr>
+										<td nowrap="nowrap" align="center" colspan="5">
+											<input type="button" id="launch3" value="启动号码" />
+											<input type="button" id="lucky3" value="开始抽奖" />
+										</td>
+									</tr>
+								</table>
+							</div>
+							<div>
+								<table cellspacing="3" border="1" cellpadding="0" align="center" width="855px" height="217px">
+									<tr>
+										<td id="f00" class="td3">000</td>
+									</tr>
+									<tr>
+										<td id="f00name" class="tdname3">XXXXXXX</td>
+									</tr>
+									<tr>
+										<td align="center">
+											<nobr>
+												<input type="button" id="launch4" value="启动号码" />
+												<input type="button" id="bai" value="百位" />
+												<input type="button" id="shi" value="十位" />
+												<input type="button" id="ge" value="个位" />
+											</nobr>
+										</td>
+									</tr>
+								</table>
+							</div>
+							<div>
+								<table cellspacing="3" border="1" cellpadding="0" align="center" width="855px"  height="217px">
+									<tbody id="tbody">
+										<tr id="tr">
+										</tr>
+										<tr id="trname">
+										</tr>
+										<tr>
+											<td align="center" colspan="10" id="col">
+												<nobr>
+													<form name="personForm">
+													<label for="person1" style="cursor: pointer;">
+														<input id="person1" type="radio" name="person" value="0"/>所有人都可参加
+													</label>
+													<label for="person2" style="cursor: pointer;">
+														<input id="person2" type="radio" name="person" value="1"/>已中奖者除外
+													</label>
+													抽奖个数:<input type="text" name="number" id="number" size="5" onblur="setTd(this.value);" onkeyup="if(eval(this.value) > 10){this.value = 10}setTd(this.value);" maxlength="2"/>
+													</form>
+													<button id="launch5">启动号码</button>
+													<button id="lucky5">开始抽奖</button>
+												</nobr>
+											</td>
+										</tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</td>
+			</tr>
+			<tr>
+				<td nowrap="nowrap" valign="top">
+					<table border="1" cellspacing="3" cellpadding="0" width="855px" class="tablepanels" style="font-size: 12px;color: white; display: none;" id="name">
+						<tr>
+							<td rowspan="6" width="150" align="right" valign="top">
+								<div id="img" style="display: none;">
+									<img id="image" src="" />
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td width="40" valign="top">
+								一等奖
+							</td>
+							<td valign="top">
+								<table border="1" bordercolor="white" cellspacing="0" cellpadding="0" style="font-size: 12px;color: white;">
+									<tbody id="theFirstPrizeTbody1">
+										<tr id="theFirstPrizeTr1"></tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td width="40" valign="top">
+								二等奖
+							</td>
+							<td valign="top">
+								<table border="1" bordercolor="white" cellspacing="0" cellpadding="0" style="font-size: 12px;color: white;">
+									<tbody id="theSecondPlaceTbody1">
+										<tr id="theSecondPlaceTr1"></tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td width="40" valign="top">
+								三等奖
+							</td>
+							<td valign="top">
+								<table border="1" bordercolor="white" cellspacing="0" cellpadding="0" style="font-size: 12px;color: white;">
+									<tbody id="theThirdPlaceTbody1">
+										<tr id="theThirdPlaceTr1"></tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td width="40" valign="top">纪念奖</td>
+							<td valign="top">
+								<table border="1" bordercolor="white" cellspacing="0" cellpadding="0" style="font-size: 12px;color: white;" >
+									<tbody id="trophyTbody1">
+										<tr id="trophyTr1" ></tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+						<tr>
+							<td width="40" valign="top">特别奖</td>
+							<td valign="top">
+								<table border="1" bordercolor="white" cellspacing="0" cellpadding="0" style="font-size: 12px;color: white;" id="specialTable">
+									<tbody id="specialTbody1">
+										<tr id="specialTr1" ></tr>
+									</tbody>
+								</table>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>                            
+		<script type="text/javascript">
+    	var list = new Ext.util.MixedCollection();
+    	list.on('replace',function(key){alert(key)});
+    	list.add('001','廖文明');list.add('002','廖建银');list.add('003','廖学平');list.add('004','廖筱华');list.add('005','廖梦刚');
+    	list.add('006','廖丽君');list.add('007','廖  平');list.add('008','廖  珂');list.add('009','廖伟华');list.add('010','廖常梅');
+    	list.add('011','廖其毓');list.add('012','廖瑞林');list.add('013','廖  影');list.add('014','廖  平');list.add('015','廖  丽');
+    	list.add('016','廖慧真');list.add('017','廖  梅');list.add('018','廖  校');list.add('019','廖塔基');list.add('020','廖英清');
+    	list.add('021','廖  丽');list.add('022','廖  梅');list.add('023','廖  宇');list.add('024','廖康敏');list.add('025','廖  峰');
+    	list.add('026','廖福民');list.add('027','廖作勇');list.add('028','廖  杰');list.add('029','廖宏波');list.add('030','廖  湛');
+    	list.add('031','廖浩里');list.add('032','廖劲草');list.add('033','廖  捷');list.add('034','廖军强');list.add('035','廖进林');
+    	list.add('036','廖琪昌');list.add('037','廖水业');list.add('038','廖锦伟');list.add('039','廖云丽');list.add('040','廖  平');
+    	list.add('041','廖观全');list.add('042','廖阳文');list.add('043','廖文举');list.add('044','廖功君');list.add('045','廖永华');
+    	list.add('046','廖文政');list.add('047','廖平生');list.add('048','廖  欣');list.add('049','廖应坤');list.add('050','廖庆明');
+    	list.add('051','廖一钒');list.add('052','廖建忠');list.add('053','廖寅晓');list.add('054','廖保国');list.add('055','廖  洁');
+    	list.add('056','廖  毅');list.add('057','廖  钢');list.add('058','廖洪钟');list.add('059','廖如锦');list.add('060','廖平华');
+    	list.add('061','廖世民');list.add('062','廖  颖');list.add('063','廖培竞');list.add('064','廖北辰');list.add('065','廖  磊');
+    	list.add('066','廖  冰');list.add('067','廖思讯');list.add('068','廖仲连');list.add('069','廖  章');list.add('070','廖  丽');
+    	list.add('071','廖  瑜');list.add('072','廖  健');list.add('073','廖  伟');list.add('074','廖  飞');list.add('075','廖  焕');
+    	list.add('076','廖小龙');list.add('077','廖苗江');list.add('078','廖钢成');list.add('079','廖远惠');list.add('080','廖相华');
+    	list.add('081','廖慈琼');list.add('082','廖  川');list.add('083','廖明宝');list.add('084','廖  利');list.add('085','廖玉容');
+    	list.add('086','廖小宁');list.add('087','廖红卫');list.add('088','廖勇红');list.add('089','廖  寿');list.add('090','廖健春');
+    	list.add('091','廖  涛');list.add('092','廖桂添');list.add('093','廖正旭');list.add('094','廖延香');list.add('095','廖江滨');
+    	list.add('096','廖珊珊');list.add('097','廖  君');list.add('098','廖  薇');list.add('099','廖  活');list.add('100','廖  珣');
+    	list.add('101','廖冬梅');list.add('102','廖  炜');list.add('103','廖臣镇');list.add('104','廖小苑');list.add('105','廖  彬');
+    	list.add('106','廖晓芳');list.add('107','廖  婧');list.add('108','廖先艳');list.add('109','廖梦谨');list.add('110','廖效云');
+    	list.add('111','廖  健');list.add('112','廖乐明');list.add('113','廖柯敏');list.add('114','廖  晶');list.add('115','廖润香');
+    	list.add('116','廖田有');list.add('117','廖  琪');list.add('118','廖远金');list.add('119','廖瀚卿');list.add('120','廖  松');
+    	list.add('121','廖凌峰');list.add('122','廖前芳');list.add('123','廖义峰');list.add('124','廖  腾');list.add('125','廖  镇');
+    	list.add('126','廖  笛');list.add('127','廖  雯');list.add('128','廖惠燕');list.add('129','廖  聪');list.add('130','廖  峰');
+    	list.add('131','廖文婧');list.add('132','廖  琼');list.add('133','廖龙英');list.add('134','廖  波');list.add('135','廖  珍');
+    	list.add('136','廖银芳');list.add('137','廖  松');list.add('138','廖雅娟');list.add('139','廖秀珍');list.add('140','廖敏真');
+    	list.add('141','廖  璠');list.add('142','廖晓芸');list.add('143','廖红梅');list.add('144','廖  芳');list.add('145','廖伟丽');
+    	list.add('146','廖莉娜');list.add('147','廖  颖');list.add('148','廖萌辉');list.add('149','廖  哲');list.add('150','廖开军');
+    	list.add('151','廖  佳');list.add('152','廖方波');list.add('153','廖  欣');list.add('154','廖若晨');list.add('155','廖昌松');
+    	list.add('156','廖  红');list.add('157','廖学成');list.add('158','廖建伟');list.add('159','廖  猛');list.add('160','廖  媛');
+    	list.add('161','廖锦怡');list.add('162','廖秋艳');list.add('163','廖福星');list.add('164','廖香娟');list.add('165','廖  虹');
+    	list.add('166','廖  礼');list.add('167','廖柏树');list.add('168','廖银钢');list.add('169','廖媛媛');list.add('170','廖志深');
+    	list.add('171','廖泽林');list.add('172','廖  毅');list.add('173','廖伟民');list.add('174','廖晓云');list.add('175','廖  响');
+    	list.add('176','廖蕾萍');list.add('177','廖  云');list.add('178','廖楚佳');list.add('179','廖强东');list.add('180','廖  敏');
+    	list.add('181','廖剑锋');list.add('182','廖  峥');list.add('183','廖琼玉');list.add('184','廖  海');list.add('185','廖  宁');
+    	list.add('186','廖艳红');list.add('187','廖晓明');list.add('188','廖国喜');list.add('189','廖文芾');list.add('190','廖伦罗');
+    	list.add('191','廖志勇');list.add('192','廖小恒');list.add('193','廖  静');list.add('194','廖  潇');list.add('195','廖梦龙');
+    	list.add('196','廖思健');list.add('197','廖发明');list.add('198','廖武涛');list.add('199','廖鸿春');list.add('200','廖海兵');
+    	
+    	//--------------------------
+    	var numbers = new Ext.util.MixedCollection();
+   		var trophy = new Ext.util.MixedCollection();			//纪念奖
+   		var theThirdPlace = new Ext.util.MixedCollection();		//三等奖
+   		var theSecondPlace = new Ext.util.MixedCollection();	//二等奖
+   		var theFirstPrize = new Ext.util.MixedCollection();		//一等奖
+   		var specialPrize = new Ext.util.MixedCollection();		//特等奖
+   		var ge,shi,bai;
+   		
+   		numbers.on('replace',function(){alert('奶奶的numbers')});
+   		trophy.on('replace',function(){alert('奶奶的trophy')});
+   		theThirdPlace.on('replace',function(){alert('奶奶的theThirdPlace')});
+   		theSecondPlace.on('replace',function(){alert('奶奶的theSecondPlace')});
+   		theFirstPrize.on('replace',function(){alert('奶奶的theFirstPrize')});
+   		specialPrize.on('replace',function(){alert('奶奶的theFirstPrize')});
+   	
+		var el = 'trophyTr1';
+		var el2 = 'theThirdPlaceTr1';
+		var el3 = 'theSecondPlaceTr1';
+		var el4 = 'theFirstPrizeTr1';
+		var el5 = 'specialTr1';
+
+		// 总人数，设置总的参加抽奖的数量，这里为一实数
+   		var seed = 199.99999;
+   		
+   		var luckyTemplate = new Ext.XTemplate(
+   			'<td style="text-align: center;">{0}</td>'
+   		);
+   		var luckyTemplate2 = new Ext.XTemplate(
+   			'<td style="text-align: center;">{0}</td>'
+   		);
+   		var luckyTemplate3 = new Ext.XTemplate(
+   			'<td style="text-align: center;">{0}</td>'
+   		);
+   		var luckyTemplate4 = new Ext.XTemplate(
+   			'<td style="text-align: center;">{0}</td>'
+   		);
+   		var luckyTemplate5 = new Ext.XTemplate(
+   			'<td id="p{0}" class="td">000</td>'
+   		);
+   		var luckyTemplate6 = new Ext.XTemplate(
+   			'<td id="p{0}name" class="tdname">XXXXXXX</td>'
+   		);
+   		var tbodyTemplate = new Ext.XTemplate(
+   			'<tbody id="{0}"></tbody>'
+   		);
+   		var trTemplate = new Ext.XTemplate(
+   			'<tr id="{0}"></tr>'
+   		);
+   		
+   		var tdTemplate = new Ext.XTemplate(
+   			'<td style="text-align: center;">{0}</td>'
+   		);
+   		
+   		var sp = new Ext.util.TaskRunner();
+   		
+   		function startTasks(count){
+   			for(var i = 0; i<count; i++){
+   				Ext.fly('p' + i + 'name').update('XXXXXXX');
+   			}
+   			sp.start({run : function(){spRunner(count);},interval : 10});
+   		}
+   		
+   		function spRunner(count){
+   			var person = document.personForm.person;
+   			var value = person[0].checked ? person[0].value : person[1].value;
+   			for(var i=0;i<count;i++){
+   				specialProcess('p' + i,value);
+   			}
+   		}
+   		
+   		function specialProcess(td,person){
+   			if(Ext.get(td) == null){
+   				setTd(Ext.get('number').getValue());
+   			}
+   			var num = 1+Math.floor(Math.random()*(seed));
+ 			var formatNum = String.leftPad(num,3,"0");
+ 			if(person == 0){
+ 				if(!specialPrize.containsKey(formatNum)){
+	 				Ext.fly(td).update(formatNum);
+	 			}
+ 			}else{
+ 				if(!specialPrize.containsKey(formatNum) && !numbers.containsKey(formatNum)){
+	 				Ext.fly(td).update(formatNum);
+	 			}
+ 			}
+ 			
+   		}
+    		
+   		function setTd(number){
+   			Ext.get('tr').remove();
+   			Ext.get('trname').remove();
+   			var col = Ext.getDom('col');
+   			col.setAttribute('colspan',1);
+   			trTemplate.insertFirst('tbody',['tr']);
+   			trTemplate.insertAfter('tr',['trname']);
+   			col.setAttribute('colspan',number);
+   			for(var i=0;i<number;i++){
+   				luckyTemplate5.append('tr',[i]);
+   				luckyTemplate6.append('trname',[i]);
+   			}
+   		}
+   		
+   		function addLuckyNumber3(td){
+   			while(true){
+   				var num = 1+Math.floor(Math.random()*(seed));
+   				var formatNum = String.leftPad(num,3,"0");
+   				if(!theSecondPlace.containsKey(formatNum) && !numbers.containsKey(formatNum)){
+   					Ext.fly(td).update(formatNum);
+					var realNum = Ext.getDom(td).innerHTML;
+		  			theSecondPlace.add(realNum,realNum);
+		  			numbers.add(realNum,realNum);
+		  			var name = list.get(formatNum);
+		  			Ext.fly(td + 'name').update(name);
+		  			if((theSecondPlace.length - 1) % 16 == 0){
+		  				el3 = Ext.id();
+		  				luckyTemplate3 = new Ext.XTemplate('<tr id="{0}"><td style="text-align: center;">{1}</td></tr>')
+		  				luckyTemplate3.append('theSecondPlaceTbody1',[el3,name]);
+		  				luckyTemplate3 = new Ext.XTemplate('<td style="text-align: center;">{0}</td>');
+		  			}else{
+	  					luckyTemplate3.append(el3,[name]);
+	  				}
+		  			break;
+   				}
+   			}
+   		}
+   		
+   		function addLuckyNumber2(td){
+   			while(true){
+   				var num = 1+Math.floor(Math.random()*(seed));
+   				var formatNum = String.leftPad(num,3,"0");
+   				if(!theThirdPlace.containsKey(formatNum) && !numbers.containsKey(formatNum)){
+   					Ext.fly(td).update(formatNum);
+					var realNum = Ext.getDom(td).innerHTML;
+		  			theThirdPlace.add(realNum,realNum);
+		  			numbers.add(realNum,realNum);
+		  			var name = list.get(formatNum);
+		  			Ext.fly(td + 'name').update(name);
+		  			if((theThirdPlace.length - 1) % 16 == 0){
+		  				el2 = Ext.id();
+		  				luckyTemplate2 = new Ext.XTemplate('<tr id="{0}"><td style="text-align: center;">{1}</td></tr>')
+		  				luckyTemplate2.append('theThirdPlaceTbody1',[el2,name]);
+		  				luckyTemplate2 = new Ext.XTemplate('<td style="text-align: center;">{0}</td>');
+		  			}else{
+	  					luckyTemplate2.append(el2,[name]);
+	  				}
+		  			break;
+   				}
+   			}
+   		}
+   		
+   		function addLuckyNumber(td){
+   			while(true){
+   				var num = 1+Math.floor(Math.random()*(seed));
+   				var formatNum = String.leftPad(num,3,"0");
+	 			if(!trophy.containsKey(formatNum) && !numbers.containsKey(formatNum)){
+					Ext.fly(td).update(formatNum);
+					var realNum = Ext.getDom(td).innerHTML;
+		  			trophy.add(realNum,realNum);
+		  			numbers.add(realNum,realNum);
+		  			var name = list.get(formatNum);
+		  			Ext.fly(td + 'name').update(name);
+		  			if((trophy.length - 1) % 16 == 0){        // 这里可以设置中奖号码区每行显示的数量
+		  				el = Ext.id();
+		  				luckyTemplate = new Ext.XTemplate('<tr id="{0}"><td style="text-align: center;">{1}</td></tr>')
+		  				luckyTemplate.append('trophyTbody1',[el,name]);
+		  				luckyTemplate = new Ext.XTemplate('<td style="text-align: center;">{0}</td>');
+		  			}else{
+	  					luckyTemplate.append(el,[name]);
+	  				}
+		  			break;
+				}
+   			}
+  		}
+
+
+		// 设置抽奖区和获奖名单区域的显示位置
+  		function resize(){
+  			Ext.get('table').alignTo('body','l',[80,-20],true);
+    		Ext.get('name').alignTo('body','l',[80,210],true);
+  		}
+		// 改变窗口大小触发此函数
+  		window.onresize = resize;
+  		// 初始化
+    	Ext.onReady(function(){
+    		//-----------一等奖代码-------------------
+    		resize();
+    		var geBtn = Ext.get('ge');
+    		var shiBtn = Ext.get('shi');
+    		var baiBtn = Ext.get('bai');
+    		var launchBtn4 = Ext.get('launch4');
+    		geBtn.dom.disabled = true;
+    		shiBtn.dom.disabled = true;
+    		baiBtn.dom.disabled = true;
+    		var numberfiled = new Ext.form.NumberField({
+    			applyTo : 'number',
+    			allowDecimals : false
+    		});
+    		
+    		var lucky5 = Ext.get('lucky5');
+    		lucky5.on('click',function(){
+    			var count = numberfiled.getValue();
+    			var tempNubmers = [];
+    			var person = document.personForm.person;
+   				var value = person[0].checked ? person[0].value : person[1].value;
+    			for(var i = 0; i<count; i++){
+    				while(true){
+    					var num = 1+Math.floor(Math.random()*(seed));
+		   				var formatNum = String.leftPad(num,3,"0");
+		   				if(value == 0){
+			 				if(!specialPrize.containsKey(formatNum)){
+				 				specialPrize.add(formatNum,formatNum);
+		    					tempNubmers.push(formatNum);
+		    					break;
+				 			}
+			 			}else{
+			 				if(!specialPrize.containsKey(formatNum) && !numbers.containsKey(formatNum)){
+				 				specialPrize.add(formatNum,formatNum);
+				 				numbers.add(formatNum,formatNum);
+		    					tempNubmers.push(formatNum);
+		    					break;
+				 			}
+			 			}
+    				}
+    			}
+    			sp.stopAll();
+    			for(var i = 0 ; i<count; i++){
+    				Ext.fly('p' + i).update(tempNubmers[i]);
+    				Ext.fly('p' + i + 'name').update(list.get(tempNubmers[i]));
+    			}
+    			Ext.get('specialTbody1').remove();
+    			tbodyTemplate.insertFirst('specialTable',['specialTbody1']);
+    			for(var i=0;i<specialPrize.length;i++){
+    				var name = list.get(specialPrize.get(i));
+    				if(i % 16 == 0){
+    					el5 = Ext.id();
+    					tdTemplate = new Ext.XTemplate('<tr id="{0}"><td style="text-align: center;">{1}</td></tr>');
+    					tdTemplate.append('specialTbody1',[el5,name]);
+    				}else{
+    					tdTemplate = new Ext.XTemplate('<td style="text-align: center;">{0}</td>');
+    					tdTemplate.append(el5,[name]);
+    				}
+    			}
+    		});
+    		
+    		var launch5 = Ext.get('launch5');
+    		launch5.on('click',function(){
+    			var person = document.personForm.person;
+    			var numTemp = document.personForm.number.value;
+    			var msg = "";
+   				if(!person[0].checked && !person[1].checked){
+   					msg += "请选择抽奖对象\n\n";
+   				}
+   				if(numTemp == "" || numTemp.trim().length <= 0){
+   					msg += "请设定抽奖个数";
+   				}
+   				if(msg.length > 0 && msg != ""){
+   					alert(msg);
+   				}
+    			startTasks(numberfiled.getValue());
+    		});
+    		
+    		function addLuckyNumber4(){
+	  			if(ge && shi && bai){
+	  				var num = Ext.getDom('f00').innerHTML;
+	  				if(!theFirstPrize.containsKey(num) && !numbers.containsKey(num)){
+	  					var name = list.get(num);
+	  					theFirstPrize.add(num,num);
+	  					numbers.add(num,num);
+	  					luckyTemplate4.append(el4,[name]);
+	  					Ext.fly('f00' + 'name').update(name);
+	  					ge = null;
+	  					shi = null;
+	  					bai = null;
+	  					t4.stopAll();
+	  					Ext.fly('f00').update(num);
+	  				}
+	  				t4.stopAll();
+	  			}
+	  		}
+	  		theFirstPrize.on('add',function(index,o,key){
+    			if(index == 1){
+    				t4.stopAll();
+    			}
+	   		});
+
+    		geBtn.on('click',function(){
+    			while(true){
+	   				var num = 1+Math.floor(Math.random()*(seed));
+	   				var formatNum = String.leftPad(num,3,"0");
+					// 看来要作弊不是那么简单的，要想控制一等奖项，首先要保证没中过其它奖项
+					// alert(!ge);
+		 			if(!theFirstPrize.containsKey(formatNum) && !numbers.containsKey(formatNum) && !ge && eval(formatNum) <= 200 && eval(formatNum) >= 1){
+		   				ge = formatNum.substring(2);
+		   				break;
+					}
+				}
+    			geBtn.dom.disabled = true;
+				addLuckyNumber4();
+    		});
+    		
+    		shiBtn.on('click',function(){
+    			while(true){
+    				var num = 1+Math.floor(Math.random()*(seed));
+	   				var formatNum = String.leftPad(num,3,"0");
+		 			if(!theFirstPrize.containsKey(formatNum) && !numbers.containsKey(formatNum) && !shi && eval(formatNum) <= 200 && eval(formatNum) >= 1){
+		   				shi = formatNum.substring(1,2);
+		   				break;
+					}
+    			}
+    			shiBtn.dom.disabled = true;
+    			addLuckyNumber4();
+    		});
+    		
+    		baiBtn.on('click',function(){
+    			while(true){
+    				var num = 1+Math.floor(Math.random()*(seed));
+	   				var formatNum = String.leftPad(num,3,"0");
+		 			if(!theFirstPrize.containsKey(formatNum) && !numbers.containsKey(formatNum) && !bai && eval(formatNum) <= 200 && eval(formatNum) >= 1){
+		   				bai = formatNum.substring(0,1);
+		   				break;
+					}
+    			}
+    			baiBtn.dom.disabled = true;
+    			addLuckyNumber4();
+    		});
+    		
+    		var f = {run : function(){process4('f00');},interval : 10}
+   			var t4 = new Ext.util.TaskRunner();
+   		
+    		function process4(td){
+   				var num = 1+Math.floor(Math.random()*(seed));
+   				var formatNum = String.leftPad(num,3,"0");
+   				var g = formatNum.substring(2);
+   				var s = formatNum.substring(1,2);
+   				var b = formatNum.substring(0,1);
+				alert(s);
+   				if(ge){
+   					formatNum = (bai ? bai : b) + (shi ? shi : s) + ge;		
+ 				}
+ 				if(shi){
+ 					formatNum = (bai ? bai : b) + shi + (ge ? ge : g);
+ 				}
+ 				if(bai){
+ 					formatNum = bai + (shi ? shi : s) + (ge ? ge : g);
+ 				}
+				// 要对一等奖进行作弊,要修改这里的条件判断 有个范围要修改
+   				if(!theFirstPrize.containsKey(formatNum) && !numbers.containsKey(formatNum) && (eval(formatNum) <= 200) && (eval(formatNum) >= 1)){
+   					Ext.fly(td).update(formatNum);
+   				}
+    		}
+    		
+    		
+    		launchBtn4.on('click',function(){
+    			if(theFirstPrize.length >= 2){return;}
+	    		Ext.fly('f00name').update('XXXXXXX');
+    			geBtn.dom.disabled = false;
+    			shiBtn.dom.disabled = false;
+    			baiBtn.dom.disabled = false;
+    			t4.start(f);
+    		});
+    		
+    		
+    		//-----------纪念奖代码-----------------------
+    		function process(td){
+    			var num = 1+Math.floor(Math.random()*(seed));
+   				var formatNum = String.leftPad(num,3,"0");
+   				if(!trophy.containsKey(formatNum) && !numbers.containsKey(formatNum)){
+   					Ext.fly(td).update(formatNum);
+   				}
+    		}
+    		var taskg00 = {run : function(){process('g00');},interval : 10}
+    		var taskg01 = {run : function(){process('g01');},interval : 10}
+    		var taskg02 = {run : function(){process('g02');},interval : 10}
+    		var taskg03 = {run : function(){process('g03');},interval : 10}
+    		var taskg04 = {run : function(){process('g04');},interval : 10}
+    		var taskg05 = {run : function(){process('g05');},interval : 10}
+    		var taskg06 = {run : function(){process('g06');},interval : 10}
+    		var taskg07 = {run : function(){process('g07');},interval : 10}
+    		var taskg08 = {run : function(){process('g08');},interval : 10}
+    		var taskg09 = {run : function(){process('g09');},interval : 10}
+    		var taskg10 = {run : function(){process('g10');},interval : 10}
+    		var taskg11 = {run : function(){process('g11');},interval : 10}
+    		var taskg12 = {run : function(){process('g12');},interval : 10}
+    		var taskg13 = {run : function(){process('g13');},interval : 10}
+    		var taskg14 = {run : function(){process('g14');},interval : 10}
+    		var taskg15 = {run : function(){process('g15');},interval : 10}
+    		var taskg16 = {run : function(){process('g16');},interval : 10}
+    		var taskg17 = {run : function(){process('g17');},interval : 10}
+    		var taskg18 = {run : function(){process('g18');},interval : 10}
+    		var taskg19 = {run : function(){process('g19');},interval : 10}
+    		
+    		var t = new Ext.util.TaskRunner();
+    		Ext.get('b00').on('click',function(){if(trophy.length >= 100){return;}t.stop(taskg00);addLuckyNumber('g00');setTimeout("Ext.getDom('b01').click()",500);});
+    		Ext.get('b01').on('click',function(){if(trophy.length >= 100){return;}t.stop(taskg01);addLuckyNumber('g01');setTimeout("Ext.getDom('b02').click()",500);});
+    		Ext.get('b02').on('click',function(){if(trophy.length >= 100){return;}t.stop(taskg02);addLuckyNumber('g02');setTimeout("Ext.getDom('b03').click()",500);});
+    		Ext.get('b03').on('click',function(){if(trophy.length >= 100){return;}t.stop(taskg03);addLuckyNumber('g03');setTimeout("Ext.getDom('b04').click()",500);});
+    		Ext.get('b04').on('click',function(){if(trophy.length >= 100){return;}t.stop(taskg04);addLuckyNumber('g04');setTimeout("Ext.getDom('b05').click()",500);});
+    		Ext.get('b05').on('click',function(){if(trophy.length >= 100){return;}t.stop(taskg05);addLuckyNumber('g05');setTimeout("Ext.getDom('b06').click()",500);});
+    		Ext.get('b06').on('click',function(){if(trophy.length >= 100){return;}t.stop(taskg06);addLuckyNumber('g06');setTimeout("Ext.getDom('b07').click()",500);});
+    		Ext.get('b07').on('click',function(){if(trophy.length >= 100){return;}t.stop(taskg07);addLuckyNumber('g07');setTimeout("Ext.getDom('b08').click()",500);});
+    		Ext.get('b08').on('click',function(){if(trophy.length >= 100){return;}t.stop(taskg08);addLuckyNumber('g08');setTimeout("Ext.getDom('b09').click()",500);});
+    		Ext.get('b09').on('click',function(){if(trophy.length >= 100){return;}t.stop(taskg09);addLuckyNumber('g09');setTimeout("Ext.getDom('b10').click()",500);});
+    		Ext.get('b10').on('click',function(){if(trophy.length >= 100){return;}t.stop(taskg10);addLuckyNumber('g10');setTimeout("Ext.getDom('b11').click()",500);});
+    		Ext.get('b11').on('click',function(){if(trophy.length >= 100){return;}t.stop(taskg11);addLuckyNumber('g11');setTimeout("Ext.getDom('b12').click()",500);});
+    		Ext.get('b12').on('click',function(){if(trophy.length >= 100){return;}t.stop(taskg12);addLuckyNumber('g12');setTimeout("Ext.getDom('b13').click()",500);});
+    		Ext.get('b13').on('click',function(){if(trophy.length >= 100){return;}t.stop(taskg13);addLuckyNumber('g13');setTimeout("Ext.getDom('b14').click()",500);});
+    		Ext.get('b14').on('click',function(){if(trophy.length >= 100){return;}t.stop(taskg14);addLuckyNumber('g14');setTimeout("Ext.getDom('b15').click()",500);});
+    		Ext.get('b15').on('click',function(){if(trophy.length >= 100){return;}t.stop(taskg15);addLuckyNumber('g15');setTimeout("Ext.getDom('b16').click()",500);});
+    		Ext.get('b16').on('click',function(){if(trophy.length >= 100){return;}t.stop(taskg16);addLuckyNumber('g16');setTimeout("Ext.getDom('b17').click()",500);});
+    		Ext.get('b17').on('click',function(){if(trophy.length >= 100){return;}t.stop(taskg17);addLuckyNumber('g17');setTimeout("Ext.getDom('b18').click()",500);});
+    		Ext.get('b18').on('click',function(){if(trophy.length >= 100){return;}t.stop(taskg18);addLuckyNumber('g18');setTimeout("Ext.getDom('b19').click()",500);});
+    		Ext.get('b19').on('click',function(){if(trophy.length >= 100){return;}t.stop(taskg19);addLuckyNumber('g19');});
+    		
+    		var launchBtn = Ext.get('launch');
+    		var luckyBtn = Ext.get('lucky');
+    		
+    		launchBtn.on('click',function(){
+				// 纪念奖抽奖次数，控制纪念奖的总人数，为每次投奖数量的整数倍，比如：每次抽20个，设置为20则只能抽一次,设成21可以抽2次
+    			if(trophy.length >= 100){
+    				t.stopAll();	
+    				return;
+    			}
+				// 摇奖初始化，隐藏中奖词语,显示为 XXXXXXXX
+    			for(var i = 0; i<20; i++){
+	    			Ext.fly('g' + String.leftPad(i,2,'0') + 'name').update('XXXXXXX');
+    			}
+				// 显示摇奖过程
+    			t.start(taskg00);
+    			t.start(taskg01);
+    			t.start(taskg02);
+    			t.start(taskg03);
+    			t.start(taskg04);
+    			t.start(taskg05);
+    			t.start(taskg06);
+    			t.start(taskg07);
+    			t.start(taskg08);
+    			t.start(taskg09);
+    			t.start(taskg10);
+    			t.start(taskg11);
+    			t.start(taskg12);
+    			t.start(taskg13);
+    			t.start(taskg14);
+    			t.start(taskg15);
+    			t.start(taskg16);
+    			t.start(taskg17);
+    			t.start(taskg18);
+    			t.start(taskg19);
+    		});
+    		
+    		luckyBtn.on('click',function(){
+    			if(trophy.length >= 100){
+    				t.stopAll();
+    				return;
+    			}
+    			setTimeout("Ext.getDom('b00').click()",500);
+    		});
+    		
+    		//-----------三等奖代码-------------
+    		function process2(td){
+    			var num = 1+Math.floor(Math.random()*(seed));
+   				var formatNum = String.leftPad(num,3,"0");
+   				if(!theThirdPlace.containsKey(formatNum) && !numbers.containsKey(formatNum)){
+   					Ext.fly(td).update(formatNum);
+   				}
+    		}
+    		
+    		var tt00 = {run : function(){process2('t00');},interval : 10}
+    		var tt01 = {run : function(){process2('t01');},interval : 10}
+    		var tt02 = {run : function(){process2('t02');},interval : 10}
+    		var tt03 = {run : function(){process2('t03');},interval : 10}
+    		var tt04 = {run : function(){process2('t04');},interval : 10}
+    		var tt05 = {run : function(){process2('t05');},interval : 10}
+    		var tt06 = {run : function(){process2('t06');},interval : 10}
+    		var tt07 = {run : function(){process2('t07');},interval : 10}
+    		var tt08 = {run : function(){process2('t08');},interval : 10}
+    		var tt09 = {run : function(){process2('t09');},interval : 10}
+    		
+    		var t2 = new Ext.util.TaskRunner();
+    		Ext.get('tbtn00').on('click',function(){if(theThirdPlace.length >= 30){return;}t2.stop(tt00);addLuckyNumber2('t00');setTimeout("Ext.getDom('tbtn01').click()",500);});
+    		Ext.get('tbtn01').on('click',function(){if(theThirdPlace.length >= 30){return;}t2.stop(tt01);addLuckyNumber2('t01');setTimeout("Ext.getDom('tbtn02').click()",500);});
+    		Ext.get('tbtn02').on('click',function(){if(theThirdPlace.length >= 30){return;}t2.stop(tt02);addLuckyNumber2('t02');setTimeout("Ext.getDom('tbtn03').click()",500);});
+    		Ext.get('tbtn03').on('click',function(){if(theThirdPlace.length >= 30){return;}t2.stop(tt03);addLuckyNumber2('t03');setTimeout("Ext.getDom('tbtn04').click()",500);});
+    		Ext.get('tbtn04').on('click',function(){if(theThirdPlace.length >= 30){return;}t2.stop(tt04);addLuckyNumber2('t04');setTimeout("Ext.getDom('tbtn05').click()",500);});
+    		Ext.get('tbtn05').on('click',function(){if(theThirdPlace.length >= 30){return;}t2.stop(tt05);addLuckyNumber2('t05');setTimeout("Ext.getDom('tbtn06').click()",500);});
+    		Ext.get('tbtn06').on('click',function(){if(theThirdPlace.length >= 30){return;}t2.stop(tt06);addLuckyNumber2('t06');setTimeout("Ext.getDom('tbtn07').click()",500);});
+    		Ext.get('tbtn07').on('click',function(){if(theThirdPlace.length >= 30){return;}t2.stop(tt07);addLuckyNumber2('t07');setTimeout("Ext.getDom('tbtn08').click()",500);});
+    		Ext.get('tbtn08').on('click',function(){if(theThirdPlace.length >= 30){return;}t2.stop(tt08);addLuckyNumber2('t08');setTimeout("Ext.getDom('tbtn09').click()",500);});
+    		Ext.get('tbtn09').on('click',function(){if(theThirdPlace.length >= 30){return;}t2.stop(tt09);addLuckyNumber2('t09');});
+    		
+    		var launchBtn2 = Ext.get('launch2');
+    		var luckyBtn2 = Ext.get('lucky2');
+    		
+    		launchBtn2.on('click',function(){
+    			if(theThirdPlace.length >= 30){return;}
+    			for(var i = 0; i<10; i++){
+	    			Ext.fly('t' + String.leftPad(i,2,'0') + 'name').update('XXXXXXX');
+    			}
+    			t2.start(tt00);
+    			t2.start(tt01);
+    			t2.start(tt02);
+    			t2.start(tt03);
+    			t2.start(tt04);
+    			t2.start(tt05);
+    			t2.start(tt06);
+    			t2.start(tt07);
+    			t2.start(tt08);
+    			t2.start(tt09);
+    		});
+    		
+    		luckyBtn2.on('click',function(){
+    			if(theThirdPlace.length >= 30){return;}
+    			setTimeout("Ext.getDom('tbtn00').click()",500);
+    		});
+    		
+    		//------------二等奖代码---------------
+    		function process3(td){
+    			var num = 1+Math.floor(Math.random()*(seed));
+   				var formatNum = String.leftPad(num,3,"0");
+   				if(!theSecondPlace.containsKey(formatNum) && !numbers.containsKey(formatNum)){
+   					Ext.fly(td).update(formatNum);
+   				}
+    		}
+    		
+    		var s00 = {run : function(){process3('s00');},interval : 10}
+    		var s01 = {run : function(){process3('s01');},interval : 10}
+    		var s02 = {run : function(){process3('s02');},interval : 10}
+    		var s03 = {run : function(){process3('s03');},interval : 10}
+    		var s04 = {run : function(){process3('s04');},interval : 10}
+    		
+    		var t3 = new Ext.util.TaskRunner();
+    		Ext.get('sbtn00').on('click',function(){if(theSecondPlace.length >= 10){return;}t3.stop(s00);addLuckyNumber3('s00');setTimeout("Ext.getDom('sbtn01').click()",500);});
+    		Ext.get('sbtn01').on('click',function(){if(theSecondPlace.length >= 10){return;}t3.stop(s01);addLuckyNumber3('s01');setTimeout("Ext.getDom('sbtn02').click()",500);});
+    		Ext.get('sbtn02').on('click',function(){if(theSecondPlace.length >= 10){return;}t3.stop(s02);addLuckyNumber3('s02');setTimeout("Ext.getDom('sbtn03').click()",500);});
+    		Ext.get('sbtn03').on('click',function(){if(theSecondPlace.length >= 10){return;}t3.stop(s03);addLuckyNumber3('s03');setTimeout("Ext.getDom('sbtn04').click()",500);});
+    		Ext.get('sbtn04').on('click',function(){if(theSecondPlace.length >= 10){return;}t3.stop(s04);addLuckyNumber3('s04');});
+    		
+    		var launchBtn3 = Ext.get('launch3');
+    		var luckyBtn3 = Ext.get('lucky3');
+    		
+    		launchBtn3.on('click',function(){
+    			if(theSecondPlace.length >= 10){return;}
+    			for(var i = 0; i<5; i++){
+	    			Ext.fly('s' + String.leftPad(i,2,'0') + 'name').update('XXXXXXX');
+    			}
+    			t3.start(s00);
+    			t3.start(s01);
+    			t3.start(s02);
+    			t3.start(s03);
+    			t3.start(s04);
+    		});
+    		
+    		luckyBtn3.on('click',function(){
+    			if(theSecondPlace.length >= 10){return;}
+    			setTimeout("Ext.getDom('sbtn00').click()",500);
+    		});
+    		
+	   		theSecondPlace.on('add',function(index){
+	   			if(index == 9){
+	   				t3.stopAll();
+	   			}
+	   		});
+	   		
+	   		theThirdPlace.on('add',function(index){
+	   			if(index == 29){
+	   				t2.stopAll();
+	   			}
+	   		});
+	   		
+	   		trophy.on('add',function(index){
+	   			if(index == 99){
+	   				t.stopAll();
+	   			}
+	   		});
+    	});
+    	
+		var theMenus=document.getElementById("tablemenu");
+		var theBodys=document.getElementById("tablebody");
+		extractNodes(theMenus);
+		extractNodes(theBodys);
+		function extractNodes(pNode){
+ 			if(pNode.nodeType==3){return;}
+ 			for(var i=0;i<pNode.childNodes.length;i++){
+	  			if(pNode.childNodes[i].nodeType==3){
+	   				pNode.removeChild(pNode.childNodes[i]);
+	   				i--;
+	  			}
+ 			}
+		}
+		function displayTab(n){
+	 		for(var i=0;i<theBodys.childNodes.length;i++){
+		  		if(theMenus.childNodes[i]){
+		   			theMenus.childNodes[i].className=(i==n?"hover":"");
+		  		}
+		  		theBodys.childNodes[i].style.display=(i==n?"":"none");
+	 		}
+		}
+		displayTab(0);
+   	</script>
+	</body>
+</html>

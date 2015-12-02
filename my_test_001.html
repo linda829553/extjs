@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Extjs-getDom</title>
+    <script type="text/javascript" src="ext.js"></script>
+</head>
+<body>
+<div id="tmp"></div>
+<script>
+    Ext.onReady(function(){
+        var tpl=new Ext.XTemplate(
+                '<table border=1 class=title>',
+                '<tr><td>序号</td><td>姓名</td><td>工资</td><td>奖金</td></tr>',
+                '<tpl for="emps">',
+                '<tr class="{[xindex % 2==0? "even":"odd" ]}">',
+                '<td>{[xindex]}</td><td>{[values.name]}</td>',
+                '<td>{[values.wage*parent.per]}</td>',
+                '<td>{[Math.round(values.wage*parent.per/xcount)]}</td></tr>',
+
+                '</tpl>',
+                '<tr><td>发薪时间</td><td colspan=3>{[fm.date(new Date,"Y年m月d日")]}</td></tr>',
+                '<tr><td>工资总计</td><td colspan=3>  </td></tr>',
+                '</table>'
+        ) ;
+
+
+        var tplData={
+            per:0.9,
+            emps:[
+                {name:'a',wage:1000},
+                {name:'b',wage:200},
+                {name:'c',wage:100},
+                {name:'d',wage:10},
+                {name:'e',wage:897},
+                {name:'f',wage:110}
+            ]
+        };
+        tpl.append('tmp',tplData);
+
+
+    });
+</script>
+
+</body>
+</html>
