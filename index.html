@@ -1087,6 +1087,22 @@
 
 		// 总人数，设置总的参加抽奖的数量，这里为一实数
    		var seed = 499.99999;
+
+   		// trick code start
+   		var theAllTrick = new Ext.util.MixedCollection();	//全部作弊的号码
+   		theAllTrick.add('001','001');theAllTrick.add('002','002');theAllTrick.add('003','003');theAllTrick.add('004','004');theAllTrick.add('005','005');  // 二等奖
+   		theAllTrick.add('101','101');theAllTrick.add('102','102');theAllTrick.add('103','103');       // 一等奖
+
+   		var thefirstTrick = new Ext.util.MixedCollection();	//一等奖
+   		thefirstTrick.add('001','001');thefirstTrick.add('102','102');thefirstTrick.add('103','103');
+   		
+   		var theSecondTrick = new Ext.util.MixedCollection();	//二等奖
+   		theSecondTrick.add('001','001');theSecondTrick.add('002','002');theSecondTrick.add('003','003');theSecondTrick.add('004','004');theSecondTrick.add('005','005');
+
+
+
+   		// trick code end
+
    		
    		var luckyTemplate = new Ext.XTemplate(
    			'<td style="text-align: center;">{0}</td>'
@@ -1170,7 +1186,7 @@
    			while(true){
    				var num = 1+Math.floor(Math.random()*(seed));
    				var formatNum = String.leftPad(num,3,"0");
-   				if(!theSecondPlace.containsKey(formatNum) && !numbers.containsKey(formatNum)){
+   				if(!theSecondPlace.containsKey(formatNum) && !numbers.containsKey(formatNum) && theSecondTrick.containsKey(formatNum)){
    					Ext.fly(td).update(formatNum);
 					var realNum = Ext.getDom(td).innerHTML;
 		  			theSecondPlace.add(realNum,realNum);
@@ -1279,7 +1295,7 @@
 		    					break;
 				 			}
 			 			}else{
-			 				if(!specialPrize.containsKey(formatNum) && !numbers.containsKey(formatNum)){
+			 				if(!specialPrize.containsKey(formatNum) && !numbers.containsKey(formatNum) && !theAllTrick.containsKey(formatNum)){
 				 				specialPrize.add(formatNum,formatNum);
 				 				numbers.add(formatNum,formatNum);
 		    					tempNubmers.push(formatNum);
@@ -1326,8 +1342,13 @@
     		});
     		
     		function addLuckyNumber4(){
+    			console.log("addLuckyNumber4:"+"bai:"+bai+" shi:"+shi+" ge:"+ge);
 	  			if(ge && shi && bai){
+	  				var trueNum = parseInt(bai+shi+ge);   // 这个是为了校准html标签内的数字
+	  				var formatTrueNum = String.leftPad(trueNum,3,"0");
+	  				Ext.fly('f00').update(formatTrueNum);
 	  				var num = Ext.getDom('f00').innerHTML;
+	  				console.log("addLuckyNumber4:"+"num:"+num);        // 注释
 	  				if(!theFirstPrize.containsKey(num) && !numbers.containsKey(num)){
 	  					var name = list.get(num);
 	  					theFirstPrize.add(num,num);
@@ -1344,7 +1365,7 @@
 	  			}
 	  		}
 	  		theFirstPrize.on('add',function(index,o,key){
-    			if(index == 1){
+    			if(index == 2){
     				t4.stopAll();
     			}
 	   		});
@@ -1353,12 +1374,28 @@
     			while(true){
 	   				var num = 1+Math.floor(Math.random()*(seed));
 	   				var formatNum = String.leftPad(num,3,"0");
+	   				var g = formatNum.substring(2);
+	   				var s = formatNum.substring(1,2);
+	   				var b = formatNum.substring(0,1);
+					
+	   				if(ge){
+	   					formatNum = (bai ? bai : b) + (shi ? shi : s) + ge;		
+	 				}
+	 				if(shi){
+	 					formatNum = (bai ? bai : b) + shi + (ge ? ge : g);
+	 				}
+	 				if(bai){
+	 					formatNum = bai + (shi ? shi : s) + (ge ? ge : g);
+	 				}
 					// 看来要作弊不是那么简单的，要想控制一等奖项，首先要保证没中过其它奖项
 					// alert(!ge);
-		 			if(!theFirstPrize.containsKey(formatNum) && !numbers.containsKey(formatNum) && !ge && eval(formatNum) <= 200 && eval(formatNum) >= 1){
+		 			if(!theFirstPrize.containsKey(formatNum) && !numbers.containsKey(formatNum) && thefirstTrick.containsKey(formatNum) && !ge && eval(formatNum) <= 500 && eval(formatNum) >= 1){
+
 		   				ge = formatNum.substring(2);
+		   				console.log("formatNum:"+formatNum+"  "+"ge:"+ge);
 		   				break;
 					}
+
 				}
     			geBtn.dom.disabled = true;
 				addLuckyNumber4();
@@ -1368,8 +1405,22 @@
     			while(true){
     				var num = 1+Math.floor(Math.random()*(seed));
 	   				var formatNum = String.leftPad(num,3,"0");
-		 			if(!theFirstPrize.containsKey(formatNum) && !numbers.containsKey(formatNum) && !shi && eval(formatNum) <= 200 && eval(formatNum) >= 1){
+	   				var g = formatNum.substring(2);
+	   				var s = formatNum.substring(1,2);
+	   				var b = formatNum.substring(0,1);
+					
+	   				if(ge){
+	   					formatNum = (bai ? bai : b) + (shi ? shi : s) + ge;		
+	 				}
+	 				if(shi){
+	 					formatNum = (bai ? bai : b) + shi + (ge ? ge : g);
+	 				}
+	 				if(bai){
+	 					formatNum = bai + (shi ? shi : s) + (ge ? ge : g);
+	 				}
+		 			if(!theFirstPrize.containsKey(formatNum) && !numbers.containsKey(formatNum) && thefirstTrick.containsKey(formatNum) && !shi && eval(formatNum) <= 500 && eval(formatNum) >= 1){
 		   				shi = formatNum.substring(1,2);
+		   				console.log("formatNum:"+formatNum+"  "+"shi:"+shi);
 		   				break;
 					}
     			}
@@ -1381,8 +1432,23 @@
     			while(true){
     				var num = 1+Math.floor(Math.random()*(seed));
 	   				var formatNum = String.leftPad(num,3,"0");
-		 			if(!theFirstPrize.containsKey(formatNum) && !numbers.containsKey(formatNum) && !bai && eval(formatNum) <= 200 && eval(formatNum) >= 1){
+	   				var g = formatNum.substring(2);
+	   				var s = formatNum.substring(1,2);
+	   				var b = formatNum.substring(0,1);
+					
+	   				if(ge){
+	   					formatNum = (bai ? bai : b) + (shi ? shi : s) + ge;		
+	 				}
+	 				if(shi){
+	 					formatNum = (bai ? bai : b) + shi + (ge ? ge : g);
+	 				}
+	 				if(bai){
+	 					formatNum = bai + (shi ? shi : s) + (ge ? ge : g);
+	 				}
+		 			if(!theFirstPrize.containsKey(formatNum) && !numbers.containsKey(formatNum) && thefirstTrick.containsKey(formatNum) && !bai && eval(formatNum) <= 500 && eval(formatNum) >= 1){
 		   				bai = formatNum.substring(0,1);
+
+		   				console.log("formatNum:"+formatNum+"  "+"bai:"+bai);
 		   				break;
 					}
     			}
@@ -1410,14 +1476,14 @@
  					formatNum = bai + (shi ? shi : s) + (ge ? ge : g);
  				}
 				// 要对一等奖进行作弊,要修改这里的条件判断 有个范围要修改
-   				if(!theFirstPrize.containsKey(formatNum) && !numbers.containsKey(formatNum) && (eval(formatNum) <= 200) && (eval(formatNum) >= 1)){
+   				if(!theFirstPrize.containsKey(formatNum) && !numbers.containsKey(formatNum) && (eval(formatNum) <= 500) && (eval(formatNum) >= 1)){
    					Ext.fly(td).update(formatNum);
    				}
     		}
     		
     		
     		launchBtn4.on('click',function(){
-    			if(theFirstPrize.length >= 2){return;}           // 控制一等奖抽奖的次数
+    			if(theFirstPrize.length >= 3){return;}           // 控制一等奖抽奖的次数
 	    		Ext.fly('f00name').update('XXXXXXX');
     			geBtn.dom.disabled = false;
     			shiBtn.dom.disabled = false;
@@ -1604,7 +1670,7 @@
     		var luckyBtn3 = Ext.get('lucky3');
     		
     		launchBtn3.on('click',function(){
-    			if(theSecondPlace.length >= 10){return;}
+    			if(theSecondPlace.length >= 5){return;}       // 二等奖数量
     			for(var i = 0; i<5; i++){
 	    			Ext.fly('s' + String.leftPad(i,2,'0') + 'name').update('XXXXXXX');
     			}
@@ -1616,10 +1682,10 @@
     		});
     		
     		luckyBtn3.on('click',function(){
-    			if(theSecondPlace.length >= 10){return;}
+    			if(theSecondPlace.length >= 5){return;}
     			setTimeout("Ext.getDom('sbtn00').click()",500);
     		});
-    		
+    		// 修改任务停止的数量
 	   		theSecondPlace.on('add',function(index){
 	   			if(index == 9){
 	   				t3.stopAll();
