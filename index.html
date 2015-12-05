@@ -10,20 +10,21 @@
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<script type="text/javascript" src="ext.js"></script>
 		<style>
-		.td{
-			font-size: 38px;
+		.td{  /*三等奖，纪念奖，特别奖号码字体*/
+			font-size: 45px;
 			font-family: Arial Black;
 			font-weight: bold;
 			color: white;
 			text-align: center;
 		}
-		.list{
-			font-size: 12px;
+		.list{  /*参加名单字体大小*/
+			font-size: 14px;      
+			// font-weight: 550;
 			color: white;
 			text-align: center;
 		}
-		.tdname{
-			font-size: 18px;
+		.tdname{   /*三等奖，纪念奖，特别奖词语字体*/
+			font-size: 24px;
 			color: #EAFF00;
 			font-weight: bold;
 			text-align: center;
@@ -77,9 +78,9 @@
 	</style>
 	</head>
 	<body topmargin="0" leftmargin="0" bgcolor="red">
-		<table border="0" align="center" class="body" height="100%" width="1024" >
+		<table border="0" align="center" class="body" height="100%" width="1680" >
 			<tr>
-				<td height="400" id="body">
+				<td height="372" id="body">
 					<div class="tablepanels" id="table">
 						<div id="tablemenu">
 							<a href="javascript:;" onclick="displayTab(0);Ext.get('name').hide();Ext.get('img').hide();">抽奖名单</a>
@@ -91,251 +92,589 @@
 						</div>
 						<div id="tablebody">
 							<div>
-								<table cellspacing="3" border="1" cellpadding="0" align="center" width="855px" class="list">
-									<tr>
-										<td>001</td><td>廖文明</td>
-										<td>002</td><td>廖建银</td>
-										<td>003</td><td>廖学平</td>
-										<td>004</td><td>廖筱华</td>
-										<td>005</td><td>廖梦刚</td>
-								    	<td>006</td><td>廖丽君</td>
-								    	<td>007</td><td>廖  平</td>
-								    	<td>008</td><td>廖  珂</td>
-								    	<td>009</td><td>廖伟华</td>
-								    	<td>010</td><td>廖常梅</td>
+								<table cellspacing="3" border="1" cellpadding="0" align="center" width="1560px" class="list">
+							    	<tr>
+								    	<td>001</td><td>欢畅</td>
+								    	<td>002</td><td>昌盛</td>
+								    	<td>003</td><td>兴隆</td>
+								    	<td>004</td><td>鸿喜</td>
+								    	<td>005</td><td>寿祺</td>
+								    	<td>006</td><td>百福</td>
+								    	<td>007</td><td>步云</td>
+								    	<td>008</td><td>宝源</td>
+								    	<td>009</td><td>宝和</td>
+								    	<td>010</td><td>存德</td>
+								    	<td>011</td><td>诚信</td>
+								    	<td>012</td><td>畅春</td>
+								    	<td>013</td><td>大发</td>
+								    	<td>014</td><td>大盛</td>
+								    	<td>015</td><td>得利</td>
 							    	</tr>
 							    	<tr>
-								    	<td>011</td><td>廖其毓</td>
-								    	<td>012</td><td>廖瑞林</td>
-								    	<td>013</td><td>廖  影</td>
-								    	<td>014</td><td>廖  平</td>
-								    	<td>015</td><td>廖  丽</td>
-								    	<td>016</td><td>廖慧真</td>
-								    	<td>017</td><td>廖  梅</td>
-								    	<td>018</td><td>廖  校</td>
-								    	<td>019</td><td>廖塔基</td>
-								    	<td>020</td><td>廖英清</td>
+								    	<td>016</td><td>道亨</td>
+								    	<td>017</td><td>鼎泰</td>
+								    	<td>018</td><td>德和</td>
+								    	<td>019</td><td>德昌</td>
+								    	<td>020</td><td>凤和</td>
+								    	<td>021</td><td>福安</td>
+								    	<td>022</td><td>福寿</td>
+								    	<td>023</td><td>福和</td>
+								    	<td>024</td><td>广远</td>
+								    	<td>025</td><td>广雅</td>
+								    	<td>026</td><td>广益</td>
+								    	<td>027</td><td>观仁</td>
+								    	<td>028</td><td>观文</td>
+								    	<td>029</td><td>合盛</td>
+								    	<td>030</td><td>华盛</td>
 							    	</tr>
 							    	<tr>
-								    	<td>021</td><td>廖  丽</td>
-								    	<td>022</td><td>廖  梅</td>
-								    	<td>023</td><td>廖  宇</td>
-								    	<td>024</td><td>廖康敏</td>
-								    	<td>025</td><td>廖  峰</td>
-								    	<td>026</td><td>廖福民</td>
-								    	<td>027</td><td>廖作勇</td>
-								    	<td>028</td><td>廖  杰</td>
-								    	<td>029</td><td>廖宏波</td>
-								    	<td>030</td><td>廖  湛</td>
+								    	<td>031</td><td>和祥</td>
+								    	<td>032</td><td>厚孚</td>
+								    	<td>033</td><td>厚康</td>
+								    	<td>034</td><td>恒德</td>
+								    	<td>035</td><td>恒孚</td>
+								    	<td>036</td><td>鸿运</td>
+								    	<td>037</td><td>鸿福</td>
+								    	<td>038</td><td>鸿源</td>
+								    	<td>039</td><td>金福</td>
+								    	<td>040</td><td>聚兴</td>
+								    	<td>041</td><td>骏兴</td>
+								    	<td>042</td><td>谦益</td>
+								    	<td>043</td><td>勤和</td>
+								    	<td>044</td><td>瑞隆</td>
+								    	<td>045</td><td>天发</td>
 							    	</tr>
 							    	<tr>
-								    	<td>031</td><td>廖浩里</td>
-								    	<td>032</td><td>廖劲草</td>
-								    	<td>033</td><td>廖  捷</td>
-								    	<td>034</td><td>廖军强</td>
-								    	<td>035</td><td>廖进林</td>
-								    	<td>036</td><td>廖琪昌</td>
-								    	<td>037</td><td>廖水业</td>
-								    	<td>038</td><td>廖锦伟</td>
-								    	<td>039</td><td>廖云丽</td>
-								    	<td>040</td><td>廖  平</td>
+								    	<td>046</td><td>天福</td>
+								    	<td>047</td><td>通顺</td>
+								    	<td>048</td><td>万顺</td>
+								    	<td>049</td><td>馨德</td>
+								    	<td>050</td><td>永盛</td>
+								    	<td>051</td><td>志成</td>
+								    	<td>052</td><td>致远</td>
+								    	<td>053</td><td>百福具臻</td>
+								    	<td>054</td><td>福寿康宁</td>
+								    	<td>055</td><td>瑞启德门</td>
+								    	<td>056</td><td>鸿喜云集</td>
+								    	<td>057</td><td>福至心灵</td>
+								    	<td>058</td><td>门潭赠庆</td>
+								    	<td>059</td><td>恭喜发财</td>
+								    	<td>060</td><td>五谷丰登</td>
 							    	</tr>
 							    	<tr>
-								    	<td>041</td><td>廖观全</td>
-								    	<td>042</td><td>廖阳文</td>
-								    	<td>043</td><td>廖文举</td>
-								    	<td>044</td><td>廖功君</td>
-								    	<td>045</td><td>廖永华</td>
-								    	<td>046</td><td>廖文政</td>
-								    	<td>047</td><td>廖平生</td>
-								    	<td>048</td><td>廖  欣</td>
-								    	<td>049</td><td>廖应坤</td>
-								    	<td>050</td><td>廖庆明</td>
+								    	<td>061</td><td>福齐南山</td>
+								    	<td>062</td><td>福寿双全</td>
+								    	<td>063</td><td>福寿年高</td>
+								    	<td>064</td><td>福惠双修</td>
+								    	<td>065</td><td>德门积庆</td>
+								    	<td>066</td><td>升祺骈福</td>
+								    	<td>067</td><td>潭祉迎祥</td>
+								    	<td>068</td><td>福祉骈蕃</td>
+								    	<td>069</td><td>五福齐全</td>
+								    	<td>070</td><td>三阳开泰</td>
+								    	<td>071</td><td>祥瑞福辏</td>
+								    	<td>072</td><td>福禄长久</td>
+								    	<td>073</td><td>潭祺迪吉</td>
+								    	<td>074</td><td>华星凝辉</td>
+								    	<td>075</td><td>万寿无疆</td>
 							    	</tr>
 							    	<tr>
-								    	<td>051</td><td>廖一钒</td>
-								    	<td>052</td><td>廖建忠</td>
-								    	<td>053</td><td>廖寅晓</td>
-								    	<td>054</td><td>廖保国</td>
-								    	<td>055</td><td>廖  洁</td>
-								    	<td>056</td><td>廖  毅</td>
-								    	<td>057</td><td>廖  钢</td>
-								    	<td>058</td><td>廖洪钟</td>
-								    	<td>059</td><td>廖如锦</td>
-								    	<td>060</td><td>廖平华</td>
+								    	<td>076</td><td>紫气东来</td>
+								    	<td>077</td><td>吉星高照</td>
+								    	<td>078</td><td>松鹤舞凤</td>
+								    	<td>079</td><td>美意富贵</td>
+								    	<td>080</td><td>麻姑酒满</td>
+								    	<td>081</td><td>金玉满堂</td>
+								    	<td>082</td><td>日转千阶</td>
+								    	<td>083</td><td>鱼跃龙门</td>
+								    	<td>084</td><td>甲第星罗</td>
+								    	<td>085</td><td>光辉灿烂</td>
+								    	<td>086</td><td>登峰造极</td>
+								    	<td>087</td><td>富贵荣华</td>
+								    	<td>088</td><td>雁塔题名</td>
+								    	<td>089</td><td>饮至策勋</td>
+								    	<td>090</td><td>云程发韧</td>
 							    	</tr>
 							    	<tr>
-								    	<td>061</td><td>廖世民</td>
-								    	<td>062</td><td>廖  颖</td>
-								    	<td>063</td><td>廖培竞</td>
-								    	<td>064</td><td>廖北辰</td>
-								    	<td>065</td><td>廖  磊</td>
-								    	<td>066</td><td>廖  冰</td>
-								    	<td>067</td><td>廖思讯</td>
-								    	<td>068</td><td>廖仲连</td>
-								    	<td>069</td><td>廖  章</td>
-								    	<td>070</td><td>廖  丽</td>
+								    	<td>091</td><td>纡朱怀金</td>
+								    	<td>092</td><td>鱼跃龙门</td>
+								    	<td>093</td><td>厚德载物</td>
+								    	<td>094</td><td>德隆望重</td>
+								    	<td>095</td><td>冰清玉洁</td>
+								    	<td>096</td><td>积爱成福</td>
+								    	<td>097</td><td>为善最乐</td>
+								    	<td>098</td><td>至诚高节</td>
+								    	<td>099</td><td>尽忠报国</td>
+								    	<td>100</td><td>国泰民安</td>
+								    	<td>101</td><td>室雅人和</td>
+								    	<td>102</td><td>风顺家兴</td>
+								    	<td>103</td><td>四海升平</td>
+								    	<td>104</td><td>民殷国富</td>
+								    	<td>105</td><td>万事如意</td>
 							    	</tr>
 							    	<tr>
-								    	<td>071</td><td>廖  瑜</td>
-								    	<td>072</td><td>廖  健</td>
-								    	<td>073</td><td>廖  伟</td>
-								    	<td>074</td><td>廖  飞</td>
-								    	<td>075</td><td>廖  焕</td>
-								    	<td>076</td><td>廖小龙</td>
-								    	<td>077</td><td>廖苗江</td>
-								    	<td>078</td><td>廖钢成</td>
-								    	<td>079</td><td>廖远惠</td>
-								    	<td>080</td><td>廖相华</td>
+								    	<td>106</td><td>风和日暖</td>
+								    	<td>107</td><td>竹报平安</td>
+								    	<td>108</td><td>读书万卷</td>
+								    	<td>109</td><td>励精图志</td>
+								    	<td>110</td><td>业精于勤</td>
+								    	<td>111</td><td>耕云种月</td>
+								    	<td>112</td><td>天道酬勤</td>
+								    	<td>113</td><td>开卷有益</td>
+								    	<td>114</td><td>胸怀洒落</td>
+								    	<td>115</td><td>温恭自虚</td>
+								    	<td>116</td><td>慎静尚宽</td>
+								    	<td>117</td><td>澄心清神</td>
+								    	<td>118</td><td>知足常乐</td>
+								    	<td>119</td><td>百忍成金</td>
+								    	<td>120</td><td>气若幽兰</td>
 							    	</tr>
 							    	<tr>
-								    	<td>081</td><td>廖慈琼</td>
-								    	<td>082</td><td>廖  川</td>
-								    	<td>083</td><td>廖明宝</td>
-								    	<td>084</td><td>廖  利</td>
-								    	<td>085</td><td>廖玉容</td>
-								    	<td>086</td><td>廖小宁</td>
-								    	<td>087</td><td>廖红卫</td>
-								    	<td>088</td><td>廖勇红</td>
-								    	<td>089</td><td>廖  寿</td>
-								    	<td>090</td><td>廖健春</td>
+								    	<td>121</td><td>豁达大度</td>
+								    	<td>122</td><td>怡然自乐</td>
+								    	<td>123</td><td>冰壶秋月</td>
+								    	<td>124</td><td>神融笔畅</td>
+								    	<td>125</td><td>会通古今</td>
+								    	<td>126</td><td>笔启自然</td>
+								    	<td>127</td><td>辞富山海</td>
+								    	<td>128</td><td>迁想秒得</td>
+								    	<td>129</td><td>思逸神超</td>
+								    	<td>130</td><td>法贵天真</td>
+								    	<td>131</td><td>言为心声</td>
+								    	<td>132</td><td>珠圆玉润</td>
+								    	<td>133</td><td>珠光宝气</td>
+								    	<td>134</td><td>春回大地</td>
+								    	<td>135</td><td>三阳开泰</td>
 							    	</tr>
 							    	<tr>
-								    	<td>091</td><td>廖  涛</td>
-								    	<td>092</td><td>廖桂添</td>
-								    	<td>093</td><td>廖正旭</td>
-								    	<td>094</td><td>廖延香</td>
-								    	<td>095</td><td>廖江滨</td>
-								    	<td>096</td><td>廖珊珊</td>
-								    	<td>097</td><td>廖  君</td>
-								    	<td>098</td><td>廖  薇</td>
-								    	<td>099</td><td>廖  活</td>
-								    	<td>100</td><td>廖  珣</td>
+								    	<td>136</td><td>满园春色</td>
+								    	<td>137</td><td>梅花数点</td>
+								    	<td>138</td><td>瑞气盈门</td>
+								    	<td>139</td><td>普天同庆</td>
+								    	<td>140</td><td>万物登明</td>
+								    	<td>141</td><td>物华焕彩</td>
+								    	<td>142</td><td>春和贻荡</td>
+								    	<td>143</td><td>春日喧和</td>
+								    	<td>144</td><td>绿静春深</td>
+								    	<td>145</td><td>啼莺舞燕</td>
+								    	<td>146</td><td>高柳垂阴</td>
+								    	<td>147</td><td>松竹含韵</td>
+								    	<td>148</td><td>百川归海</td>
+								    	<td>149</td><td>兰蕙桂馥</td>
+								    	<td>150</td><td>风调雨顺</td>
 							    	</tr>
 							    	<tr>
-								    	<td>101</td><td>廖冬梅</td>
-								    	<td>102</td><td>廖  炜</td>
-								    	<td>103</td><td>廖臣镇</td>
-								    	<td>104</td><td>廖小苑</td>
-								    	<td>105</td><td>廖  彬</td>
-								    	<td>106</td><td>廖晓芳</td>
-								    	<td>107</td><td>廖  婧</td>
-								    	<td>108</td><td>廖先艳</td>
-								    	<td>109</td><td>廖梦谨</td>
-								    	<td>110</td><td>廖效云</td>
+								    	<td>151</td><td>龙飞凤舞</td>
+								    	<td>152</td><td>宁静致远</td>
+								    	<td>153</td><td>择如时雨</td>
+								    	<td>154</td><td>云兴霞蔚</td>
+								    	<td>155</td><td>百卉含英</td>
+								    	<td>156</td><td>兰秀菊芳</td>
+								    	<td>157</td><td>浮翠流丹</td>
+								    	<td>158</td><td>花意竹情</td>
+								    	<td>159</td><td>汇川纳海</td>
+								    	<td>160</td><td>兴隆大业</td>
+								    	<td>161</td><td>宏图大展</td>
+								    	<td>162</td><td>裕业有孚</td>
+								    	<td>163</td><td>融通四海</td>
+								    	<td>164</td><td>壮志凌云</td>
+								    	<td>165</td><td>鹏程万里</td>
 							    	</tr>
 							    	<tr>
-								    	<td>111</td><td>廖  健</td>
-								    	<td>112</td><td>廖乐明</td>
-								    	<td>113</td><td>廖柯敏</td>
-								    	<td>114</td><td>廖  晶</td>
-								    	<td>115</td><td>廖润香</td>
-								    	<td>116</td><td>廖田有</td>
-								    	<td>117</td><td>廖  琪</td>
-								    	<td>118</td><td>廖远金</td>
-								    	<td>119</td><td>廖瀚卿</td>
-								    	<td>120</td><td>廖  松</td>
+								    	<td>166</td><td>群贤毕至</td>
+								    	<td>167</td><td>大展鸿图</td>
+								    	<td>168</td><td>积健为雄</td>
+								    	<td>169</td><td>海纳百川</td>
+								    	<td>170</td><td>龙藏深泉</td>
+								    	<td>171</td><td>骏业崇隆</td>
+								    	<td>172</td><td>陶未媲美</td>
+								    	<td>173</td><td>鼎业维新</td>
+								    	<td>174</td><td>富国利民</td>
+								    	<td>175</td><td>骏业肇兴</td>
+								    	<td>176</td><td>大展鸿图</td>
+								    	<td>177</td><td>多财善贾</td>
+								    	<td>178</td><td>鸿猷大展</td>
+								    	<td>179</td><td>大业千秋</td>
+								    	<td>180</td><td>大展经纶</td>
 							    	</tr>
 							    	<tr>
-								    	<td>121</td><td>廖凌峰</td>
-								    	<td>122</td><td>廖前芳</td>
-								    	<td>123</td><td>廖义峰</td>
-								    	<td>124</td><td>廖  腾</td>
-								    	<td>125</td><td>廖  镇</td>
-								    	<td>126</td><td>廖  笛</td>
-								    	<td>127</td><td>廖  雯</td>
-								    	<td>128</td><td>廖惠燕</td>
-								    	<td>129</td><td>廖  聪</td>
-								    	<td>130</td><td>廖  峰</td>
+								    	<td>181</td><td>骏业日新</td>
+								    	<td>182</td><td>源远流长</td>
+								    	<td>183</td><td>万商云集</td>
+								    	<td>184</td><td>阳光明媚</td>
+								    	<td>185</td><td>东风送情</td>
+								    	<td>186</td><td>德昭邻壑</td>
+								    	<td>187</td><td>才震四方</td>
+								    	<td>188</td><td>大富启源</td>
+								    	<td>189</td><td>莺迁仁里</td>
+								    	<td>190</td><td>燕贺德邻</td>
+								    	<td>191</td><td>紫气兆祥</td>
+								    	<td>192</td><td>百世宏基</td>
+								    	<td>193</td><td>近悦远来</td>
+								    	<td>194</td><td>蒸蒸日上</td>
+								    	<td>195</td><td>蒸蒸日上</td>
 							    	</tr>
 							    	<tr>
-								    	<td>131</td><td>廖文婧</td>
-								    	<td>132</td><td>廖  琼</td>
-								    	<td>133</td><td>廖龙英</td>
-								    	<td>134</td><td>廖  波</td>
-								    	<td>135</td><td>廖  珍</td>
-								    	<td>136</td><td>廖银芳</td>
-								    	<td>137</td><td>廖  松</td>
-								    	<td>138</td><td>廖雅娟</td>
-								    	<td>139</td><td>廖秀珍</td>
-								    	<td>140</td><td>廖敏真</td>
+								    	<td>196</td><td>欣欣向荣</td>
+								    	<td>197</td><td>鼎业维新</td>
+								    	<td>198</td><td>鸿献大展</td>
+								    	<td>199</td><td>金玉满堂</td>
+								    	<td>200</td><td>美轮美奂</td>
+								    	<td>201</td><td>新基鼎定</td>
+								    	<td>202</td><td>福地杰人</td>
+								    	<td>203</td><td>堂构更新</td>
+								    	<td>204</td><td>秀茁兰芽</td>
+								    	<td>205</td><td>焕然一新</td>
+								    	<td>206</td><td>鸿犹大展</td>
+								    	<td>207</td><td>大吉大利</td>
+								    	<td>208</td><td>五福临门</td>
+								    	<td>209</td><td>四季平安</td>
+								    	<td>210</td><td>心想事成</td>
 							    	</tr>
 							    	<tr>
-								    	<td>141</td><td>廖  璠</td>
-								    	<td>142</td><td>廖晓芸</td>
-								    	<td>143</td><td>廖红梅</td>
-								    	<td>144</td><td>廖  芳</td>
-								    	<td>145</td><td>廖伟丽</td>
-								    	<td>146</td><td>廖莉娜</td>
-								    	<td>147</td><td>廖  颖</td>
-								    	<td>148</td><td>廖萌辉</td>
-								    	<td>149</td><td>廖  哲</td>
-								    	<td>150</td><td>廖开军</td>
+								    	<td>211</td><td>吉祥如意</td>
+								    	<td>212</td><td>吉庆有余</td>
+								    	<td>213</td><td>年年有余</td>
+								    	<td>214</td><td>花开富贵</td>
+								    	<td>215</td><td>竹报平安</td>
+								    	<td>216</td><td>招财进宝</td>
+								    	<td>217</td><td>满堂富贵</td>
+								    	<td>218</td><td>新昭如意</td>
+								    	<td>219</td><td>迎春纳福</td>
+								    	<td>220</td><td>贺颂春厘</td>
+								    	<td>221</td><td>富贵有余</td>
+								    	<td>222</td><td>福星高照</td>
+								    	<td>223</td><td>开岁百福</td>
+								    	<td>224</td><td>事事顺心</td>
+								    	<td>225</td><td>万事如意</td>
 							    	</tr>
 							    	<tr>
-								    	<td>151</td><td>廖  佳</td>
-								    	<td>152</td><td>廖方波</td>
-								    	<td>153</td><td>廖  欣</td>
-								    	<td>154</td><td>廖若晨</td>
-								    	<td>155</td><td>廖昌松</td>
-								    	<td>156</td><td>廖  红</td>
-								    	<td>157</td><td>廖学成</td>
-								    	<td>158</td><td>廖建伟</td>
-								    	<td>159</td><td>廖  猛</td>
-								    	<td>160</td><td>廖  媛</td>
+								    	<td>226</td><td>恭喜发财</td>
+								    	<td>227</td><td>岁岁平安</td>
+								    	<td>228</td><td>一马当先</td>
+								    	<td>229</td><td>出类拔萃</td>
+								    	<td>230</td><td>个中翘楚</td>
+								    	<td>231</td><td>无与伦比</td>
+								    	<td>232</td><td>超越巅峰</td>
+								    	<td>233</td><td>劳苦功高</td>
+								    	<td>234</td><td>卓越干练</td>
+								    	<td>235</td><td>品资卓越</td>
+								    	<td>236</td><td>无懈可击</td>
+								    	<td>237</td><td>成绩斐然</td>
+								    	<td>238</td><td>敬业乐群</td>
+								    	<td>239</td><td>业绩辉煌</td>
+								    	<td>240</td><td>绝伦逸群</td>
 							    	</tr>
 							    	<tr>
-								    	<td>161</td><td>廖锦怡</td>
-								    	<td>162</td><td>廖秋艳</td>
-								    	<td>163</td><td>廖福星</td>
-								    	<td>164</td><td>廖香娟</td>
-								    	<td>165</td><td>廖  虹</td>
-								    	<td>166</td><td>廖  礼</td>
-								    	<td>167</td><td>廖柏树</td>
-								    	<td>168</td><td>廖银钢</td>
-								    	<td>169</td><td>廖媛媛</td>
-								    	<td>170</td><td>廖志深</td>
-							    	</tr>
-								    <tr>
-								    	<td>171</td><td>廖泽林</td>
-								    	<td>172</td><td>廖  毅</td>
-								    	<td>173</td><td>廖伟民</td>
-								    	<td>174</td><td>廖晓云</td>
-								    	<td>175</td><td>廖  响</td>
-								    	<td>176</td><td>廖蕾萍</td>
-								    	<td>177</td><td>廖  云</td>
-								    	<td>178</td><td>廖楚佳</td>
-								    	<td>179</td><td>廖强东</td>
-								    	<td>180</td><td>廖  敏</td>
-							    	</tr>
-								    <tr>
-								    	<td>181</td><td>廖剑锋</td>
-								    	<td>182</td><td>廖  峥</td>
-								    	<td>183</td><td>廖琼玉</td>
-								    	<td>184</td><td>廖  海</td>
-								    	<td>185</td><td>廖  宁</td>
-								    	<td>186</td><td>廖艳红</td>
-								    	<td>187</td><td>廖晓明</td>
-								    	<td>188</td><td>廖国喜</td>
-								    	<td>189</td><td>廖文芾</td>
-								    	<td>190</td><td>廖伦罗</td>
+								    	<td>241</td><td>筚路蓝缕</td>
+								    	<td>242</td><td>英才得展</td>
+								    	<td>243</td><td>青云直上</td>
+								    	<td>244</td><td>鹏程万里</td>
+								    	<td>245</td><td>懋绩可风</td>
+								    	<td>246</td><td>名标金榜</td>
+								    	<td>247</td><td>才高八斗</td>
+								    	<td>248</td><td>才华横溢</td>
+								    	<td>249</td><td>名列前芧</td>
+								    	<td>250</td><td>名冠群伦</td>
+								    	<td>251</td><td>出类拔萃</td>
+								    	<td>252</td><td>前程万里</td>
+								    	<td>253</td><td>前途辉煌</td>
+								    	<td>254</td><td>鹏程万里</td>
+								    	<td>255</td><td>欣欣向荣</td>
 							    	</tr>
 							    	<tr>
-								    	<td>191</td><td>廖志勇</td>
-								    	<td>192</td><td>廖小恒</td>
-								    	<td>193</td><td>廖  静</td>
-								    	<td>194</td><td>廖  潇</td>
-								    	<td>195</td><td>廖梦龙</td>
-								    	<td>196</td><td>廖思健</td>
-								    	<td>197</td><td>廖发明</td>
-								    	<td>198</td><td>廖武涛</td>
-								    	<td>199</td><td>廖鸿春</td>
-								    	<td>200</td><td>廖海兵</td>
-									</tr>
+								    	<td>256</td><td>信孚中外</td>
+								    	<td>257</td><td>裕国利民</td>
+								    	<td>258</td><td>信用卓著</td>
+								    	<td>259</td><td>实业昌隆</td>
+								    	<td>260</td><td>名孚众望</td>
+								    	<td>261</td><td>仁声广被</td>
+								    	<td>262</td><td>口碑载道</td>
+								    	<td>263</td><td>功在桑梓</td>
+								    	<td>264</td><td>才华横溢</td>
+								    	<td>265</td><td>芸众慧人</td>
+								    	<td>266</td><td>高宾满座</td>
+								    	<td>267</td><td>胜友如云</td>
+								    	<td>268</td><td>赏心悦目</td>
+								    	<td>269</td><td>多彩多姿</td>
+								    	<td>270</td><td>尽善尽美</td>
+							    	</tr>
+							    	<tr>
+								    	<td>271</td><td>声色俱佳</td>
+								    	<td>272</td><td>云天厚谊</td>
+								    	<td>273</td><td>聚情永怀</td>
+								    	<td>274</td><td>盟谊永固</td>
+								    	<td>275</td><td>情谊永怀</td>
+								    	<td>276</td><td>锦情义茂</td>
+								    	<td>277</td><td>浩然之气</td>
+								    	<td>278</td><td>山辉川媚</td>
+								    	<td>279</td><td>风月无边</td>
+								    	<td>280</td><td>花枝招飐</td>
+								    	<td>281</td><td>眉欢眼笑</td>
+								    	<td>282</td><td>欢天喜地</td>
+								    	<td>283</td><td>欢欣鼓舞</td>
+								    	<td>284</td><td>谈笑风生</td>
+								    	<td>285</td><td>喜不自胜</td>
+							    	</tr>
+							    	<tr>
+								    	<td>286</td><td>喜眉笑眼</td>
+								    	<td>287</td><td>心花怒放</td>
+								    	<td>288</td><td>喜笑颜开</td>
+								    	<td>289</td><td>怡然自乐</td>
+								    	<td>290</td><td>他乡遇故知</td>
+								    	<td>291</td><td>悦目娱心</td>
+								    	<td>292</td><td>笑逐颜开</td>
+								    	<td>293</td><td>怡情悦性</td>
+								    	<td>294</td><td>喜不自胜</td>
+								    	<td>295</td><td>风度偏偏</td>
+								    	<td>296</td><td>英姿勃发</td>
+								    	<td>297</td><td>豪气干云</td>
+								    	<td>298</td><td>挥洒自如</td>
+								    	<td>299</td><td>德艺双馨</td>
+								    	<td>300</td><td>温文尔雅</td>
+							    	</tr>
+							    	<tr>
+								    	<td>301</td><td>文质彬彬</td>
+								    	<td>302</td><td>礼贤下士</td>
+								    	<td>303</td><td>神采飞扬</td>
+								    	<td>304</td><td>英姿飒爽</td>
+								    	<td>305</td><td>玉树凌风</td>
+								    	<td>306</td><td>和为贵</td>
+								    	<td>307</td><td>吉祥鸟</td>
+								    	<td>308</td><td>玉如意</td>
+								    	<td>309</td><td>鸿(宏)图展</td>
+								    	<td>310</td><td>风调雨顺</td>
+								    	<td>311</td><td>绿静春深</td>
+								    	<td>312</td><td>花意竹情</td>
+								    	<td>313</td><td>五谷丰登</td>
+								    	<td>314</td><td>吉庆有余</td>
+								    	<td>315</td><td>惠风和畅</td>
+							    	</tr>
+							    	<tr>
+								    	<td>316</td><td>春日暄和</td>
+								    	<td>317</td><td>鸢飞鱼跃</td>
+								    	<td>318</td><td>兰秀菊芳</td>
+								    	<td>319</td><td>赫日流辉</td>
+								    	<td>320</td><td>万事遂心</td>
+								    	<td>321</td><td>日度小康</td>
+								    	<td>322</td><td>四海皆春</td>
+								    	<td>323</td><td>幸福美满</td>
+								    	<td>324</td><td>福泰安康</td>
+								    	<td>325</td><td>万事如意</td>
+								    	<td>326</td><td>凤鸣朝阳</td>
+								    	<td>327</td><td>气若幽兰</td>
+								    	<td>328</td><td>泽如时雨</td>
+								    	<td>329</td><td>云兴霞蔚</td>
+								    	<td>330</td><td>百卉含英</td>
+							    	</tr>
+							    	<tr>
+								    	<td>331</td><td>家和</td>
+								    	<td>332</td><td>平安</td>
+								    	<td>333</td><td>富贵</td>
+								    	<td>334</td><td>大和</td>
+								    	<td>335</td><td>百兴</td>
+								    	<td>336</td><td>祥瑞</td>
+								    	<td>337</td><td>顺心</td>
+								    	<td>338</td><td>灿烂</td>
+								    	<td>339</td><td>幸福</td>
+								    	<td>340</td><td>美妙</td>
+								    	<td>341</td><td>吉祥</td>
+								    	<td>342</td><td>福禄</td>
+								    	<td>343</td><td>一帆风顺</td>
+								    	<td>344</td><td>喜从天降</td>
+								    	<td>345</td><td>龙马精神</td>
+							    	</tr>
+							    	<tr>
+								    	<td>346</td><td>神采奕奕</td>
+								    	<td>347</td><td>财源广进</td>
+								    	<td>348</td><td>生意兴隆</td>
+								    	<td>349</td><td>二龙腾飞</td>
+								    	<td>350</td><td>三羊开泰</td>
+								    	<td>351</td><td>四季平安</td>
+								    	<td>352</td><td>五福临门</td>
+								    	<td>353</td><td>六六大顺</td>
+								    	<td>354</td><td>七星高照</td>
+								    	<td>355</td><td>八方来财</td>
+								    	<td>356</td><td>九九同心</td>
+								    	<td>357</td><td>十全十美</td>
+								    	<td>358</td><td>福星高照</td>
+								    	<td>359</td><td>百事顺遂</td>
+								    	<td>360</td><td>鸿运当头</td>
+							    	</tr>
+							    	<tr>
+								    	<td>361</td><td>山高水长</td>
+								    	<td>362</td><td>抬头见喜</td>
+								    	<td>363</td><td>花迎春光</td>
+								    	<td>364</td><td>财源亨通</td>
+								    	<td>365</td><td>喜气洋洋</td>
+								    	<td>366</td><td>福享新春</td>
+								    	<td>367</td><td>喜鹊鸣春</td>
+								    	<td>368</td><td>喜气盈门</td>
+								    	<td>369</td><td>岁且更始</td>
+								    	<td>370</td><td>万物回春</td>
+								    	<td>371</td><td>一门瑞气</td>
+								    	<td>372</td><td>万里春风</td>
+								    	<td>373</td><td>春回柳叶</td>
+								    	<td>374</td><td>千祥云集</td>
+								    	<td>375</td><td>诸凡顺遂</td>
+							    	</tr>
+							    	<tr>
+								    	<td>376</td><td>蒸蒸日上</td>
+								    	<td>377</td><td>日新月异</td>
+								    	<td>378</td><td>龙马精神</td>
+								    	<td>379</td><td>意气风发</td>
+								    	<td>380</td><td>好事连连</td>
+								    	<td>381</td><td>文定吉祥</td>
+								    	<td>382</td><td>丰财聚宝</td>
+								    	<td>383</td><td>事业有成</td>
+								    	<td>384</td><td>青春永驻</td>
+								    	<td>385</td><td>东成西就</td>
+								    	<td>386</td><td>合家平安</td>
+								    	<td>387</td><td>富贵双全</td>
+								    	<td>388</td><td>笑口常开</td>
+								    	<td>389</td><td>喜乐连年</td>
+								    	<td>390</td><td>万象更新</td>
+							    	</tr>
+							    	<tr>
+								    	<td>391</td><td>笑语缤纷</td>
+								    	<td>392</td><td>好事连连</td>
+								    	<td>393</td><td>生活美满</td>
+								    	<td>394</td><td>迎春接福</td>
+								    	<td>395</td><td>合家欢乐</td>
+								    	<td>396</td><td>福气东来</td>
+								    	<td>397</td><td>鸿运通天</td>
+								    	<td>398</td><td>祥瑞新年</td>
+								    	<td>399</td><td>万事胜意</td>
+								    	<td>400</td><td>得心应手</td>
+								    	<td>401</td><td>福禄寿禧</td>
+								    	<td>402</td><td>飞黄腾达</td>
+								    	<td>403</td><td>美梦连连</td>
+								    	<td>404</td><td>百业兴旺</td>
+								    	<td>405</td><td>锦绣前程</td>
+							    	</tr>
+							    	<tr>
+								    	<td>406</td><td>喜上眉梢</td>
+								    	<td>407</td><td>春风得意</td>
+								    	<td>408</td><td>前程似锦</td>
+								    	<td>409</td><td>马到功成</td>
+								    	<td>410</td><td>星罗棋布</td>
+								    	<td>411</td><td>合乐融融</td>
+								    	<td>412</td><td>青云直上</td>
+								    	<td>413</td><td>龙腾虎跃</td>
+								    	<td>414</td><td>阖家安康</td>
+								    	<td>415</td><td>大业千秋</td>
+								    	<td>416</td><td>大展经纶</td>
+								    	<td>417</td><td>登峰造极</td>
+								    	<td>418</td><td>天长地久</td>
+								    	<td>419</td><td>日进斗金</td>
+								    	<td>420</td><td>龙凤呈祥</td>
+							    	</tr>
+							    	<tr>
+								    	<td>421</td><td>福至心灵</td>
+								    	<td>422</td><td>福慧双修</td>
+								    	<td>423</td><td>凤麒呈祥</td>
+								    	<td>424</td><td>吉事先近</td>
+								    	<td>425</td><td>翡翠鸿图</td>
+								    	<td>426</td><td>康乐延绵</td>
+								    	<td>427</td><td>炯炯有神</td>
+								    	<td>428</td><td>精神焕发</td>
+								    	<td>429</td><td>气宇轩昂</td>
+								    	<td>430</td><td>满面春风</td>
+								    	<td>431</td><td>万紫千红</td>
+								    	<td>432</td><td>花红柳绿</td>
+								    	<td>433</td><td>花团锦簇</td>
+								    	<td>434</td><td>花枝招展</td>
+								    	<td>435</td><td>包罗万象</td>
+							    	</tr>
+							    	<tr>
+								    	<td>436</td><td>美不胜收</td>
+								    	<td>437</td><td>春意盎然</td>
+								    	<td>438</td><td>百花齐放</td>
+								    	<td>439</td><td>一路连科</td>
+								    	<td>440</td><td>马上封侯</td>
+								    	<td>441</td><td>魁星点斗</td>
+								    	<td>442</td><td>马到成功</td>
+								    	<td>443</td><td>冰壶秋月</td>
+								    	<td>444</td><td>春日暄和</td>
+								    	<td>445</td><td>松竹含韵</td>
+								    	<td>446</td><td>良辰美景</td>
+								    	<td>447</td><td>闻名遐迩</td>
+								    	<td>448</td><td>秋水伊人</td>
+								    	<td>449</td><td>和气致祥</td>
+								    	<td>450</td><td>祥风时雨</td>
+							    	</tr>
+							    	<tr>
+								    	<td>451</td><td>祥云瑞气</td>
+								    	<td>452</td><td>祥麟威凤</td>
+								    	<td>453</td><td>逢吉丁辰</td>
+								    	<td>454</td><td>吉人天相</td>
+								    	<td>455</td><td>天利人和</td>
+								    	<td>456</td><td>秋月春花</td>
+								    	<td>457</td><td>金桂飘香</td>
+								    	<td>458</td><td>春华秋实</td>
+								    	<td>459</td><td>阳光大道</td>
+								    	<td>460</td><td>太平盛世</td>
+								    	<td>461</td><td>政通人和</td>
+								    	<td>462</td><td>承平盛世</td>
+								    	<td>463</td><td>世外桃源</td>
+								    	<td>464</td><td>心花怒放</td>
+								    	<td>465</td><td>一曲迎春</td>
+							    	</tr>
+							    	<tr>
+								    	<td>466</td><td>一门天赐</td>
+								    	<td>467</td><td>四海春风洽</td>
+								    	<td>468</td><td>气贯长虹</td>
+								    	<td>469</td><td>河清海晏</td>
+								    	<td>470</td><td>万里春光</td>
+								    	<td>471</td><td>竹报三多</td>
+								    	<td>472</td><td>花漫九州</td>
+								    	<td>473</td><td>梅开五福</td>
+								    	<td>474</td><td>春和景丽</td>
+								    	<td>475</td><td>春盈四海</td>
+								    	<td>476</td><td>春日载阳</td>
+								    	<td>477</td><td>跃马争春</td>
+								    	<td>478</td><td>年年大发</td>
+								    	<td>479</td><td>翘盼福音</td>
+								    	<td>480</td><td>纳福迎祥</td>
+							    	</tr>
+							    	<tr>
+								    	<td>481</td><td>刘海戏金蟾</td>
+								    	<td>482</td><td>鸟语花香</td>
+								    	<td>483</td><td>龙跃凤鸣</td>
+								    	<td>484</td><td>大发利市</td>
+								    	<td>485</td><td>富贵有余</td>
+								    	<td>486</td><td>迎春纳福</td>
+								    	<td>487</td><td>如日方升</td>
+								    	<td>488</td><td>万里鹏翼</td>
+								    	<td>489</td><td>眼瞻福气</td>
+								    	<td>490</td><td>手写阳春</td>
+								    	<td>491</td><td>载瞻星气</td>
+								    	<td>492</td><td>造家庭福</td>
+								    	<td>493</td><td>庆云跃日</td>
+								    	<td>494</td><td>满园春光</td>
+								    	<td>495</td><td>簪缨世泽</td>
+							    	</tr>
+							    	<tr>
+								    	<td>496</td><td>豫立亨通</td>
+								    	<td>497</td><td>百花献瑞</td>
+								    	<td>498</td><td>淑气宜人</td>
+								    	<td>499</td><td>幸福无疆</td>
+								    	<td>500</td><td>旭日东升</td>
+								    	<td></td><td></td>
+								    	<td></td><td></td>
+								    	<td></td><td></td>
+								    	<td></td><td></td>
+								    	<td></td><td></td>
+								    	<td></td><td></td>
+								    	<td></td><td></td>
+								    	<td></td><td></td>
+								    	<td></td><td></td>
+								    	<td></td><td></td>
+							    	</tr>
 								</table>
 							</div>
 							<div>
-								<table cellspacing="3" border="1" cellpadding="0" align="center" width="855px" height="217px">
+								<table cellspacing="3" border="1" cellpadding="0" align="center" width="1560px" height="231px">
 									<tr>
 										<td id="g00" class="td">000</td>
 										<td id="g01" class="td">000</td>
@@ -417,7 +756,7 @@
 								</table>
 							</div>
 							<div>
-								<table cellspacing="3" border="1" cellpadding="0" align="center" width="855px" height="217px" >
+								<table cellspacing="3" border="1" cellpadding="0" align="center" width="1560px" height="231px" >
 									<tr>
 										<td id="t00" class="td">000</td>
 										<td id="t01" class="td">000</td>
@@ -469,7 +808,7 @@
 								</table>
 							</div>
 							<div>
-								<table cellspacing="3" border="1" cellpadding="0" align="center" width="855px" height="217px">
+								<table cellspacing="3" border="1" cellpadding="0" align="center" width="1560px" height="231px">
 									<tr>
 										<td id="s00" class="td2">000</td>
 										<td id="s01" class="td2">000</td>
@@ -500,7 +839,7 @@
 								</table>
 							</div>
 							<div>
-								<table cellspacing="3" border="1" cellpadding="0" align="center" width="855px" height="217px">
+								<table cellspacing="3" border="1" cellpadding="0" align="center" width="1560px" height="231px">
 									<tr>
 										<td id="f00" class="td3">000</td>
 									</tr>
@@ -520,7 +859,7 @@
 								</table>
 							</div>
 							<div>
-								<table cellspacing="3" border="1" cellpadding="0" align="center" width="855px"  height="217px">
+								<table cellspacing="3" border="1" cellpadding="0" align="center" width="1560px"  height="231px">
 									<tbody id="tbody">
 										<tr id="tr">
 										</tr>
@@ -552,7 +891,7 @@
 			</tr>
 			<tr>
 				<td nowrap="nowrap" valign="top">
-					<table border="1" cellspacing="3" cellpadding="0" width="855px" class="tablepanels" style="font-size: 12px;color: white; display: none;" id="name">
+					<table border="1" cellspacing="3" cellpadding="0" width="1560px" class="tablepanels" style="font-size: 16px;color: white; display: none;font-weight:600;" id="name">
 						<tr>
 							<td rowspan="6" width="150" align="right" valign="top">
 								<div id="img" style="display: none;">
@@ -561,11 +900,11 @@
 							</td>
 						</tr>
 						<tr>
-							<td width="40" valign="top">
+							<td width="50" valign="top">
 								一等奖
 							</td>
 							<td valign="top">
-								<table border="1" bordercolor="white" cellspacing="0" cellpadding="0" style="font-size: 12px;color: white;">
+								<table border="1" bordercolor="white" cellspacing="0" cellpadding="3" style="font-size: 16px;color: white;font-weight:600;">
 									<tbody id="theFirstPrizeTbody1">
 										<tr id="theFirstPrizeTr1"></tr>
 									</tbody>
@@ -573,11 +912,11 @@
 							</td>
 						</tr>
 						<tr>
-							<td width="40" valign="top">
+							<td width="50" valign="top">
 								二等奖
 							</td>
 							<td valign="top">
-								<table border="1" bordercolor="white" cellspacing="0" cellpadding="0" style="font-size: 12px;color: white;">
+								<table border="1" bordercolor="white" cellspacing="0" cellpadding="3" style="font-size: 16px;color: white;font-weight:600;">
 									<tbody id="theSecondPlaceTbody1">
 										<tr id="theSecondPlaceTr1"></tr>
 									</tbody>
@@ -585,11 +924,11 @@
 							</td>
 						</tr>
 						<tr>
-							<td width="40" valign="top">
+							<td width="50" valign="top">
 								三等奖
 							</td>
 							<td valign="top">
-								<table border="1" bordercolor="white" cellspacing="0" cellpadding="0" style="font-size: 12px;color: white;">
+								<table border="1" bordercolor="white" cellspacing="0" cellpadding="3" style="font-size: 16px;color: white;font-weight:600;">
 									<tbody id="theThirdPlaceTbody1">
 										<tr id="theThirdPlaceTr1"></tr>
 									</tbody>
@@ -597,9 +936,9 @@
 							</td>
 						</tr>
 						<tr>
-							<td width="40" valign="top">纪念奖</td>
+							<td width="50" valign="top">纪念奖</td>
 							<td valign="top">
-								<table border="1" bordercolor="white" cellspacing="0" cellpadding="0" style="font-size: 12px;color: white;" >
+								<table border="1" bordercolor="white" cellspacing="0" cellpadding="3" style="font-size: 16px;color: white;font-weight:600;" >
 									<tbody id="trophyTbody1">
 										<tr id="trophyTr1" ></tr>
 									</tbody>
@@ -607,9 +946,9 @@
 							</td>
 						</tr>
 						<tr>
-							<td width="40" valign="top">特别奖</td>
+							<td width="50" valign="top">特别奖</td>
 							<td valign="top">
-								<table border="1" bordercolor="white" cellspacing="0" cellpadding="0" style="font-size: 12px;color: white;" id="specialTable">
+								<table border="1" bordercolor="white" cellspacing="0" cellpadding="3" style="font-size: 16px;color: white;font-weight:600;" id="specialTable">
 									<tbody id="specialTbody1">
 										<tr id="specialTr1" ></tr>
 									</tbody>
@@ -623,46 +962,106 @@
 		<script type="text/javascript">
     	var list = new Ext.util.MixedCollection();
     	list.on('replace',function(key){alert(key)});
-    	list.add('001','廖文明');list.add('002','廖建银');list.add('003','廖学平');list.add('004','廖筱华');list.add('005','廖梦刚');
-    	list.add('006','廖丽君');list.add('007','廖  平');list.add('008','廖  珂');list.add('009','廖伟华');list.add('010','廖常梅');
-    	list.add('011','廖其毓');list.add('012','廖瑞林');list.add('013','廖  影');list.add('014','廖  平');list.add('015','廖  丽');
-    	list.add('016','廖慧真');list.add('017','廖  梅');list.add('018','廖  校');list.add('019','廖塔基');list.add('020','廖英清');
-    	list.add('021','廖  丽');list.add('022','廖  梅');list.add('023','廖  宇');list.add('024','廖康敏');list.add('025','廖  峰');
-    	list.add('026','廖福民');list.add('027','廖作勇');list.add('028','廖  杰');list.add('029','廖宏波');list.add('030','廖  湛');
-    	list.add('031','廖浩里');list.add('032','廖劲草');list.add('033','廖  捷');list.add('034','廖军强');list.add('035','廖进林');
-    	list.add('036','廖琪昌');list.add('037','廖水业');list.add('038','廖锦伟');list.add('039','廖云丽');list.add('040','廖  平');
-    	list.add('041','廖观全');list.add('042','廖阳文');list.add('043','廖文举');list.add('044','廖功君');list.add('045','廖永华');
-    	list.add('046','廖文政');list.add('047','廖平生');list.add('048','廖  欣');list.add('049','廖应坤');list.add('050','廖庆明');
-    	list.add('051','廖一钒');list.add('052','廖建忠');list.add('053','廖寅晓');list.add('054','廖保国');list.add('055','廖  洁');
-    	list.add('056','廖  毅');list.add('057','廖  钢');list.add('058','廖洪钟');list.add('059','廖如锦');list.add('060','廖平华');
-    	list.add('061','廖世民');list.add('062','廖  颖');list.add('063','廖培竞');list.add('064','廖北辰');list.add('065','廖  磊');
-    	list.add('066','廖  冰');list.add('067','廖思讯');list.add('068','廖仲连');list.add('069','廖  章');list.add('070','廖  丽');
-    	list.add('071','廖  瑜');list.add('072','廖  健');list.add('073','廖  伟');list.add('074','廖  飞');list.add('075','廖  焕');
-    	list.add('076','廖小龙');list.add('077','廖苗江');list.add('078','廖钢成');list.add('079','廖远惠');list.add('080','廖相华');
-    	list.add('081','廖慈琼');list.add('082','廖  川');list.add('083','廖明宝');list.add('084','廖  利');list.add('085','廖玉容');
-    	list.add('086','廖小宁');list.add('087','廖红卫');list.add('088','廖勇红');list.add('089','廖  寿');list.add('090','廖健春');
-    	list.add('091','廖  涛');list.add('092','廖桂添');list.add('093','廖正旭');list.add('094','廖延香');list.add('095','廖江滨');
-    	list.add('096','廖珊珊');list.add('097','廖  君');list.add('098','廖  薇');list.add('099','廖  活');list.add('100','廖  珣');
-    	list.add('101','廖冬梅');list.add('102','廖  炜');list.add('103','廖臣镇');list.add('104','廖小苑');list.add('105','廖  彬');
-    	list.add('106','廖晓芳');list.add('107','廖  婧');list.add('108','廖先艳');list.add('109','廖梦谨');list.add('110','廖效云');
-    	list.add('111','廖  健');list.add('112','廖乐明');list.add('113','廖柯敏');list.add('114','廖  晶');list.add('115','廖润香');
-    	list.add('116','廖田有');list.add('117','廖  琪');list.add('118','廖远金');list.add('119','廖瀚卿');list.add('120','廖  松');
-    	list.add('121','廖凌峰');list.add('122','廖前芳');list.add('123','廖义峰');list.add('124','廖  腾');list.add('125','廖  镇');
-    	list.add('126','廖  笛');list.add('127','廖  雯');list.add('128','廖惠燕');list.add('129','廖  聪');list.add('130','廖  峰');
-    	list.add('131','廖文婧');list.add('132','廖  琼');list.add('133','廖龙英');list.add('134','廖  波');list.add('135','廖  珍');
-    	list.add('136','廖银芳');list.add('137','廖  松');list.add('138','廖雅娟');list.add('139','廖秀珍');list.add('140','廖敏真');
-    	list.add('141','廖  璠');list.add('142','廖晓芸');list.add('143','廖红梅');list.add('144','廖  芳');list.add('145','廖伟丽');
-    	list.add('146','廖莉娜');list.add('147','廖  颖');list.add('148','廖萌辉');list.add('149','廖  哲');list.add('150','廖开军');
-    	list.add('151','廖  佳');list.add('152','廖方波');list.add('153','廖  欣');list.add('154','廖若晨');list.add('155','廖昌松');
-    	list.add('156','廖  红');list.add('157','廖学成');list.add('158','廖建伟');list.add('159','廖  猛');list.add('160','廖  媛');
-    	list.add('161','廖锦怡');list.add('162','廖秋艳');list.add('163','廖福星');list.add('164','廖香娟');list.add('165','廖  虹');
-    	list.add('166','廖  礼');list.add('167','廖柏树');list.add('168','廖银钢');list.add('169','廖媛媛');list.add('170','廖志深');
-    	list.add('171','廖泽林');list.add('172','廖  毅');list.add('173','廖伟民');list.add('174','廖晓云');list.add('175','廖  响');
-    	list.add('176','廖蕾萍');list.add('177','廖  云');list.add('178','廖楚佳');list.add('179','廖强东');list.add('180','廖  敏');
-    	list.add('181','廖剑锋');list.add('182','廖  峥');list.add('183','廖琼玉');list.add('184','廖  海');list.add('185','廖  宁');
-    	list.add('186','廖艳红');list.add('187','廖晓明');list.add('188','廖国喜');list.add('189','廖文芾');list.add('190','廖伦罗');
-    	list.add('191','廖志勇');list.add('192','廖小恒');list.add('193','廖  静');list.add('194','廖  潇');list.add('195','廖梦龙');
-    	list.add('196','廖思健');list.add('197','廖发明');list.add('198','廖武涛');list.add('199','廖鸿春');list.add('200','廖海兵');
+		list.add('001','欢畅');list.add('002','昌盛');list.add('003','兴隆');list.add('004','鸿喜');list.add('005','寿祺');
+		list.add('006','百福');list.add('007','步云');list.add('008','宝源');list.add('009','宝和');list.add('010','存德');
+		list.add('011','诚信');list.add('012','畅春');list.add('013','大发');list.add('014','大盛');list.add('015','得利');
+		list.add('016','道亨');list.add('017','鼎泰');list.add('018','德和');list.add('019','德昌');list.add('020','凤和');
+		list.add('021','福安');list.add('022','福寿');list.add('023','福和');list.add('024','广远');list.add('025','广雅');
+		list.add('026','广益');list.add('027','观仁');list.add('028','观文');list.add('029','合盛');list.add('030','华盛');
+		list.add('031','和祥');list.add('032','厚孚');list.add('033','厚康');list.add('034','恒德');list.add('035','恒孚');
+		list.add('036','鸿运');list.add('037','鸿福');list.add('038','鸿源');list.add('039','金福');list.add('040','聚兴');
+		list.add('041','骏兴');list.add('042','谦益');list.add('043','勤和');list.add('044','瑞隆');list.add('045','天发');
+		list.add('046','天福');list.add('047','通顺');list.add('048','万顺');list.add('049','馨德');list.add('050','永盛');
+		list.add('051','志成');list.add('052','致远');list.add('053','百福具臻');list.add('054','福寿康宁');list.add('055','瑞启德门');
+		list.add('056','鸿喜云集');list.add('057','福至心灵');list.add('058','门潭赠庆');list.add('059','恭喜发财');list.add('060','五谷丰登');
+		list.add('061','福齐南山');list.add('062','福寿双全');list.add('063','福寿年高');list.add('064','福惠双修');list.add('065','德门积庆');
+		list.add('066','升祺骈福');list.add('067','潭祉迎祥');list.add('068','福祉骈蕃');list.add('069','五福齐全');list.add('070','三阳开泰');
+		list.add('071','祥瑞福辏');list.add('072','福禄长久');list.add('073','潭祺迪吉');list.add('074','华星凝辉');list.add('075','万寿无疆');
+		list.add('076','紫气东来');list.add('077','吉星高照');list.add('078','松鹤舞凤');list.add('079','美意富贵');list.add('080','麻姑酒满');
+		list.add('081','金玉满堂');list.add('082','日转千阶');list.add('083','鱼跃龙门');list.add('084','甲第星罗');list.add('085','光辉灿烂');
+		list.add('086','登峰造极');list.add('087','富贵荣华');list.add('088','雁塔题名');list.add('089','饮至策勋');list.add('090','云程发韧');
+		list.add('091','纡朱怀金');list.add('092','鱼跃龙门');list.add('093','厚德载物');list.add('094','德隆望重');list.add('095','冰清玉洁');
+		list.add('096','积爱成福');list.add('097','为善最乐');list.add('098','至诚高节');list.add('099','尽忠报国');list.add('100','国泰民安');
+		list.add('101','室雅人和');list.add('102','风顺家兴');list.add('103','四海升平');list.add('104','民殷国富');list.add('105','万事如意');
+		list.add('106','风和日暖');list.add('107','竹报平安');list.add('108','读书万卷');list.add('109','励精图志');list.add('110','业精于勤');
+		list.add('111','耕云种月');list.add('112','天道酬勤');list.add('113','开卷有益');list.add('114','胸怀洒落');list.add('115','温恭自虚');
+		list.add('116','慎静尚宽');list.add('117','澄心清神');list.add('118','知足常乐');list.add('119','百忍成金');list.add('120','气若幽兰');
+		list.add('121','豁达大度');list.add('122','怡然自乐');list.add('123','冰壶秋月');list.add('124','神融笔畅');list.add('125','会通古今');
+		list.add('126','笔启自然');list.add('127','辞富山海');list.add('128','迁想秒得');list.add('129','思逸神超');list.add('130','法贵天真');
+		list.add('131','言为心声');list.add('132','珠圆玉润');list.add('133','珠光宝气');list.add('134','春回大地');list.add('135','三阳开泰');
+		list.add('136','满园春色');list.add('137','梅花数点');list.add('138','瑞气盈门');list.add('139','普天同庆');list.add('140','万物登明');
+		list.add('141','物华焕彩');list.add('142','春和贻荡');list.add('143','春日喧和');list.add('144','绿静春深');list.add('145','啼莺舞燕');
+		list.add('146','高柳垂阴');list.add('147','松竹含韵');list.add('148','百川归海');list.add('149','兰蕙桂馥');list.add('150','风调雨顺');
+		list.add('151','龙飞凤舞');list.add('152','宁静致远');list.add('153','择如时雨');list.add('154','云兴霞蔚');list.add('155','百卉含英');
+		list.add('156','兰秀菊芳');list.add('157','浮翠流丹');list.add('158','花意竹情');list.add('159','汇川纳海');list.add('160','兴隆大业');
+		list.add('161','宏图大展');list.add('162','裕业有孚');list.add('163','融通四海');list.add('164','壮志凌云');list.add('165','鹏程万里');
+		list.add('166','群贤毕至');list.add('167','大展鸿图');list.add('168','积健为雄');list.add('169','海纳百川');list.add('170','龙藏深泉');
+		list.add('171','骏业崇隆');list.add('172','陶未媲美');list.add('173','鼎业维新');list.add('174','富国利民');list.add('175','骏业肇兴');
+		list.add('176','大展鸿图');list.add('177','多财善贾');list.add('178','鸿猷大展');list.add('179','大业千秋');list.add('180','大展经纶');
+		list.add('181','骏业日新');list.add('182','源远流长');list.add('183','万商云集');list.add('184','阳光明媚');list.add('185','东风送情');
+		list.add('186','德昭邻壑');list.add('187','才震四方');list.add('188','大富启源');list.add('189','莺迁仁里');list.add('190','燕贺德邻');
+		list.add('191','紫气兆祥');list.add('192','百世宏基');list.add('193','近悦远来');list.add('194','蒸蒸日上');list.add('195','蒸蒸日上');
+		list.add('196','欣欣向荣');list.add('197','鼎业维新');list.add('198','鸿献大展');list.add('199','金玉满堂');list.add('200','美轮美奂');
+		list.add('201','新基鼎定');list.add('202','福地杰人');list.add('203','堂构更新');list.add('204','秀茁兰芽');list.add('205','焕然一新');
+		list.add('206','鸿犹大展');list.add('207','大吉大利');list.add('208','五福临门');list.add('209','四季平安');list.add('210','心想事成');
+		list.add('211','吉祥如意');list.add('212','吉庆有余');list.add('213','年年有余');list.add('214','花开富贵');list.add('215','竹报平安');
+		list.add('216','招财进宝');list.add('217','满堂富贵');list.add('218','新昭如意');list.add('219','迎春纳福');list.add('220','贺颂春厘');
+		list.add('221','富贵有余');list.add('222','福星高照');list.add('223','开岁百福');list.add('224','事事顺心');list.add('225','万事如意');
+		list.add('226','恭喜发财');list.add('227','岁岁平安');list.add('228','一马当先');list.add('229','出类拔萃');list.add('230','个中翘楚');
+		list.add('231','无与伦比');list.add('232','超越巅峰');list.add('233','劳苦功高');list.add('234','卓越干练');list.add('235','品资卓越');
+		list.add('236','无懈可击');list.add('237','成绩斐然');list.add('238','敬业乐群');list.add('239','业绩辉煌');list.add('240','绝伦逸群');
+		list.add('241','筚路蓝缕');list.add('242','英才得展');list.add('243','青云直上');list.add('244','鹏程万里');list.add('245','懋绩可风');
+		list.add('246','名标金榜');list.add('247','才高八斗');list.add('248','才华横溢');list.add('249','名列前芧');list.add('250','名冠群伦');
+		list.add('251','出类拔萃');list.add('252','前程万里');list.add('253','前途辉煌');list.add('254','鹏程万里');list.add('255','欣欣向荣');
+		list.add('256','信孚中外');list.add('257','裕国利民');list.add('258','信用卓著');list.add('259','实业昌隆');list.add('260','名孚众望');
+		list.add('261','仁声广被');list.add('262','口碑载道');list.add('263','功在桑梓');list.add('264','才华横溢');list.add('265','芸众慧人');
+		list.add('266','高宾满座');list.add('267','胜友如云');list.add('268','赏心悦目');list.add('269','多彩多姿');list.add('270','尽善尽美');
+		list.add('271','声色俱佳');list.add('272','云天厚谊');list.add('273','聚情永怀');list.add('274','盟谊永固');list.add('275','情谊永怀');
+		list.add('276','锦情义茂');list.add('277','浩然之气');list.add('278','山辉川媚');list.add('279','风月无边');list.add('280','花枝招飐');
+		list.add('281','眉欢眼笑');list.add('282','欢天喜地');list.add('283','欢欣鼓舞');list.add('284','谈笑风生');list.add('285','喜不自胜');
+		list.add('286','喜眉笑眼');list.add('287','心花怒放');list.add('288','喜笑颜开');list.add('289','怡然自乐');list.add('290','他乡遇故知');
+		list.add('291','悦目娱心');list.add('292','笑逐颜开');list.add('293','怡情悦性');list.add('294','喜不自胜');list.add('295','风度偏偏');
+		list.add('296','英姿勃发');list.add('297','豪气干云');list.add('298','挥洒自如');list.add('299','德艺双馨');list.add('300','温文尔雅');
+		list.add('301','文质彬彬');list.add('302','礼贤下士');list.add('303','神采飞扬');list.add('304','英姿飒爽');list.add('305','玉树凌风');
+		list.add('306','和为贵');list.add('307','吉祥鸟');list.add('308','玉如意');list.add('309','鸿(宏)图展');list.add('310','风调雨顺');
+		list.add('311','绿静春深');list.add('312','花意竹情');list.add('313','五谷丰登');list.add('314','吉庆有余');list.add('315','惠风和畅');
+		list.add('316','春日暄和');list.add('317','鸢飞鱼跃');list.add('318','兰秀菊芳');list.add('319','赫日流辉');list.add('320','万事遂心');
+		list.add('321','日度小康');list.add('322','四海皆春');list.add('323','幸福美满');list.add('324','福泰安康');list.add('325','万事如意');
+		list.add('326','凤鸣朝阳');list.add('327','气若幽兰');list.add('328','泽如时雨');list.add('329','云兴霞蔚');list.add('330','百卉含英');
+		list.add('331','家和');list.add('332','平安');list.add('333','富贵');list.add('334','大和');list.add('335','百兴');
+		list.add('336','祥瑞');list.add('337','顺心');list.add('338','灿烂');list.add('339','幸福');list.add('340','美妙');
+		list.add('341','吉祥');list.add('342','福禄');list.add('343','一帆风顺');list.add('344','喜从天降');list.add('345','龙马精神');
+		list.add('346','神采奕奕');list.add('347','财源广进');list.add('348','生意兴隆');list.add('349','二龙腾飞');list.add('350','三羊开泰');
+		list.add('351','四季平安');list.add('352','五福临门');list.add('353','六六大顺');list.add('354','七星高照');list.add('355','八方来财');
+		list.add('356','九九同心');list.add('357','十全十美');list.add('358','福星高照');list.add('359','百事顺遂');list.add('360','鸿运当头');
+		list.add('361','山高水长');list.add('362','抬头见喜');list.add('363','花迎春光');list.add('364','财源亨通');list.add('365','喜气洋洋');
+		list.add('366','福享新春');list.add('367','喜鹊鸣春');list.add('368','喜气盈门');list.add('369','岁且更始');list.add('370','万物回春');
+		list.add('371','一门瑞气');list.add('372','万里春风');list.add('373','春回柳叶');list.add('374','千祥云集');list.add('375','诸凡顺遂');
+		list.add('376','蒸蒸日上');list.add('377','日新月异');list.add('378','龙马精神');list.add('379','意气风发');list.add('380','好事连连');
+		list.add('381','文定吉祥');list.add('382','丰财聚宝');list.add('383','事业有成');list.add('384','青春永驻');list.add('385','东成西就');
+		list.add('386','合家平安');list.add('387','富贵双全');list.add('388','笑口常开');list.add('389','喜乐连年');list.add('390','万象更新');
+		list.add('391','笑语缤纷');list.add('392','好事连连');list.add('393','生活美满');list.add('394','迎春接福');list.add('395','合家欢乐');
+		list.add('396','福气东来');list.add('397','鸿运通天');list.add('398','祥瑞新年');list.add('399','万事胜意');list.add('400','得心应手');
+		list.add('401','福禄寿禧');list.add('402','飞黄腾达');list.add('403','美梦连连');list.add('404','百业兴旺');list.add('405','锦绣前程');
+		list.add('406','喜上眉梢');list.add('407','春风得意');list.add('408','前程似锦');list.add('409','马到功成');list.add('410','星罗棋布');
+		list.add('411','合乐融融');list.add('412','青云直上');list.add('413','龙腾虎跃');list.add('414','阖家安康');list.add('415','大业千秋');
+		list.add('416','大展经纶');list.add('417','登峰造极');list.add('418','天长地久');list.add('419','日进斗金');list.add('420','龙凤呈祥');
+		list.add('421','福至心灵');list.add('422','福慧双修');list.add('423','凤麒呈祥');list.add('424','吉事先近');list.add('425','翡翠鸿图');
+		list.add('426','康乐延绵');list.add('427','炯炯有神');list.add('428','精神焕发');list.add('429','气宇轩昂');list.add('430','满面春风');
+		list.add('431','万紫千红');list.add('432','花红柳绿');list.add('433','花团锦簇');list.add('434','花枝招展');list.add('435','包罗万象');
+		list.add('436','美不胜收');list.add('437','春意盎然');list.add('438','百花齐放');list.add('439','一路连科');list.add('440','马上封侯');
+		list.add('441','魁星点斗');list.add('442','马到成功');list.add('443','冰壶秋月');list.add('444','春日暄和');list.add('445','松竹含韵');
+		list.add('446','良辰美景');list.add('447','闻名遐迩');list.add('448','秋水伊人');list.add('449','和气致祥');list.add('450','祥风时雨');
+		list.add('451','祥云瑞气');list.add('452','祥麟威凤');list.add('453','逢吉丁辰');list.add('454','吉人天相');list.add('455','天利人和');
+		list.add('456','秋月春花');list.add('457','金桂飘香');list.add('458','春华秋实');list.add('459','阳光大道');list.add('460','太平盛世');
+		list.add('461','政通人和');list.add('462','承平盛世');list.add('463','世外桃源');list.add('464','心花怒放');list.add('465','一曲迎春');
+		list.add('466','一门天赐');list.add('467','四海春风洽');list.add('468','气贯长虹');list.add('469','河清海晏');list.add('470','万里春光');
+		list.add('471','竹报三多');list.add('472','花漫九州');list.add('473','梅开五福');list.add('474','春和景丽');list.add('475','春盈四海');
+		list.add('476','春日载阳');list.add('477','跃马争春');list.add('478','年年大发');list.add('479','翘盼福音');list.add('480','纳福迎祥');
+		list.add('481','刘海戏金蟾');list.add('482','鸟语花香');list.add('483','龙跃凤鸣');list.add('484','大发利市');list.add('485','富贵有余');
+		list.add('486','迎春纳福');list.add('487','如日方升');list.add('488','万里鹏翼');list.add('489','眼瞻福气');list.add('490','手写阳春');
+		list.add('491','载瞻星气');list.add('492','造家庭福');list.add('493','庆云跃日');list.add('494','满园春光');list.add('495','簪缨世泽');
+		list.add('496','豫立亨通');list.add('497','百花献瑞');list.add('498','淑气宜人');list.add('499','幸福无疆');list.add('500','旭日东升');
     	
     	//--------------------------
     	var numbers = new Ext.util.MixedCollection();
@@ -687,7 +1086,7 @@
 		var el5 = 'specialTr1';
 
 		// 总人数，设置总的参加抽奖的数量，这里为一实数
-   		var seed = 199.99999;
+   		var seed = 499.99999;
    		
    		var luckyTemplate = new Ext.XTemplate(
    			'<td style="text-align: center;">{0}</td>'
@@ -842,8 +1241,8 @@
 
 		// 设置抽奖区和获奖名单区域的显示位置
   		function resize(){
-  			Ext.get('table').alignTo('body','l',[80,-20],true);
-    		Ext.get('name').alignTo('body','l',[80,210],true);
+  			Ext.get('table').alignTo('body','l',[60,-50],true);
+    		Ext.get('name').alignTo('body','l',[60,190],true);
   		}
 		// 改变窗口大小触发此函数
   		window.onresize = resize;
@@ -865,7 +1264,7 @@
     		
     		var lucky5 = Ext.get('lucky5');
     		lucky5.on('click',function(){
-    			var count = numberfiled.getValue();
+    			var count = numberfiled.getValue();    // 特别奖每次抽奖的人数
     			var tempNubmers = [];
     			var person = document.personForm.person;
    				var value = person[0].checked ? person[0].value : person[1].value;
@@ -889,12 +1288,12 @@
 			 			}
     				}
     			}
-    			sp.stopAll();
+    			sp.stopAll(); // 停止摇奖
     			for(var i = 0 ; i<count; i++){
     				Ext.fly('p' + i).update(tempNubmers[i]);
     				Ext.fly('p' + i + 'name').update(list.get(tempNubmers[i]));
     			}
-    			Ext.get('specialTbody1').remove();
+    			Ext.get('specialTbody1').remove();  // 为什么要remove
     			tbodyTemplate.insertFirst('specialTable',['specialTbody1']);
     			for(var i=0;i<specialPrize.length;i++){
     				var name = list.get(specialPrize.get(i));
@@ -1000,7 +1399,7 @@
    				var g = formatNum.substring(2);
    				var s = formatNum.substring(1,2);
    				var b = formatNum.substring(0,1);
-				alert(s);
+				
    				if(ge){
    					formatNum = (bai ? bai : b) + (shi ? shi : s) + ge;		
  				}
@@ -1018,7 +1417,7 @@
     		
     		
     		launchBtn4.on('click',function(){
-    			if(theFirstPrize.length >= 2){return;}
+    			if(theFirstPrize.length >= 2){return;}           // 控制一等奖抽奖的次数
 	    		Ext.fly('f00name').update('XXXXXXX');
     			geBtn.dom.disabled = false;
     			shiBtn.dom.disabled = false;
@@ -1115,7 +1514,7 @@
     		});
     		
     		luckyBtn.on('click',function(){
-    			if(trophy.length >= 100){
+    			if(trophy.length >= 100){  // 纪念奖的总人数
     				t.stopAll();
     				return;
     			}
@@ -1158,7 +1557,7 @@
     		var luckyBtn2 = Ext.get('lucky2');
     		
     		launchBtn2.on('click',function(){
-    			if(theThirdPlace.length >= 30){return;}
+    			if(theThirdPlace.length >= 30){return;}     // 三等奖数量
     			for(var i = 0; i<10; i++){
 	    			Ext.fly('t' + String.leftPad(i,2,'0') + 'name').update('XXXXXXX');
     			}
@@ -1176,7 +1575,7 @@
     		
     		luckyBtn2.on('click',function(){
     			if(theThirdPlace.length >= 30){return;}
-    			setTimeout("Ext.getDom('tbtn00').click()",500);
+    			setTimeout("Ext.getDom('tbtn00').click()",500);   // 三等奖数量
     		});
     		
     		//------------二等奖代码---------------
