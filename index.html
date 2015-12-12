@@ -10,6 +10,10 @@
 		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
 		<script type="text/javascript" src="ext.js"></script>
 		<style>
+		body{  /*不显示滚动条*/
+			overflow-x: hidden;
+			overflow-y: hidden;
+		}
 		.td{  /*三等奖，纪念奖，特别奖号码字体*/
 			font-size: 45px;
 			font-family: Arial Black;
@@ -78,7 +82,7 @@
 	</style>
 	</head>
 	<body topmargin="0" leftmargin="0" bgcolor="red">
-		<table border="0" align="center" class="body" height="100%" width="1680" >
+		<table border="0" align="center" class="body" height="100%" width="1920px" >
 			<tr>
 				<td height="372" id="body">
 					<div class="tablepanels" id="table">
@@ -202,7 +206,7 @@
 							    	</tr>
 							    	<tr>
 								    	<td>091</td><td>纡朱怀金</td>
-								    	<td>092</td><td>鱼跃龙门</td>
+								    	<td>092</td><td>快乐养生</td>
 								    	<td>093</td><td>厚德载物</td>
 								    	<td>094</td><td>德隆望重</td>
 								    	<td>095</td><td>冰清玉洁</td>
@@ -542,7 +546,7 @@
 							    	</tr>
 							    	<tr>
 								    	<td>391</td><td>笑语缤纷</td>
-								    	<td>392</td><td>好事连连</td>
+								    	<td>392</td><td>好事不断</td>
 								    	<td>393</td><td>生活美满</td>
 								    	<td>394</td><td>迎春接福</td>
 								    	<td>395</td><td>合家欢乐</td>
@@ -1192,7 +1196,7 @@
 		list.add('076','紫气东来');list.add('077','吉星高照');list.add('078','松鹤舞凤');list.add('079','美意富贵');list.add('080','麻姑酒满');
 		list.add('081','金玉满堂');list.add('082','日转千阶');list.add('083','鱼跃龙门');list.add('084','甲第星罗');list.add('085','光辉灿烂');
 		list.add('086','登峰造极');list.add('087','富贵荣华');list.add('088','雁塔题名');list.add('089','饮至策勋');list.add('090','云程发韧');
-		list.add('091','纡朱怀金');list.add('092','鱼跃龙门');list.add('093','厚德载物');list.add('094','德隆望重');list.add('095','冰清玉洁');
+		list.add('091','纡朱怀金');list.add('092','快乐养生');list.add('093','厚德载物');list.add('094','德隆望重');list.add('095','冰清玉洁');
 		list.add('096','积爱成福');list.add('097','为善最乐');list.add('098','至诚高节');list.add('099','尽忠报国');list.add('100','国泰民安');
 		list.add('101','室雅人和');list.add('102','风顺家兴');list.add('103','四海升平');list.add('104','民殷国富');list.add('105','万事如意');
 		list.add('106','风和日暖');list.add('107','竹报平安');list.add('108','读书万卷');list.add('109','励精图志');list.add('110','业精于勤');
@@ -1252,7 +1256,7 @@
 		list.add('376','蒸蒸日上');list.add('377','日新月异');list.add('378','龙马精神');list.add('379','意气风发');list.add('380','好事连连');
 		list.add('381','文定吉祥');list.add('382','丰财聚宝');list.add('383','事业有成');list.add('384','青春永驻');list.add('385','东成西就');
 		list.add('386','合家平安');list.add('387','富贵双全');list.add('388','笑口常开');list.add('389','喜乐连年');list.add('390','万象更新');
-		list.add('391','笑语缤纷');list.add('392','好事连连');list.add('393','生活美满');list.add('394','迎春接福');list.add('395','合家欢乐');
+		list.add('391','笑语缤纷');list.add('392','好事不断');list.add('393','生活美满');list.add('394','迎春接福');list.add('395','合家欢乐');
 		list.add('396','福气东来');list.add('397','鸿运通天');list.add('398','祥瑞新年');list.add('399','万事胜意');list.add('400','得心应手');
 		list.add('401','福禄寿禧');list.add('402','飞黄腾达');list.add('403','美梦连连');list.add('404','百业兴旺');list.add('405','锦绣前程');
 		list.add('406','喜上眉梢');list.add('407','春风得意');list.add('408','前程似锦');list.add('409','马到功成');list.add('410','星罗棋布');
@@ -1488,6 +1492,12 @@
 		  			}else{
 	  					luckyTemplate8.append(el8,[name]);
 	  				}
+	  				// ajax 向后台发送中奖号码，姓名，及中奖等级
+	  				Ext.Ajax.request({
+	  					url: 'http://localhost/test/mysql2html/choujiang/saveWinner.php',
+	  					method: 'post',
+	  					params:{num:realNum,wrd:name,lev:8}
+	  				});
 		  			break;
    				}
    			}
@@ -1544,8 +1554,8 @@
 
 		// 设置抽奖区和获奖名单区域的显示位置
   		function resize(){
-  			Ext.get('table').alignTo('body','l',[60,-50],true);
-    		Ext.get('name').alignTo('body','l',[60,190],true);
+  			Ext.get('table').alignTo('body','l',[180,60],true);
+    		Ext.get('name').alignTo('body','l',[180,1100],true);
   		}
 		// 改变窗口大小触发此函数
   		window.onresize = resize;
@@ -1586,6 +1596,7 @@
 	  			}
 	  		}
 	  		theOutstandPrize.on('add',function(index,o,key){
+	  			console.log("add-Event: index-"+index+" o-"+o+" key-"+key);
     			if(index == 2){
     				t9.stopAll();
     			}
@@ -1724,6 +1735,7 @@
    				// console.log("process8: formatNum-td1"+formatNum);
    				if(!theSecondPlace.containsKey(formatNum) && !numbers.containsKey(formatNum)){
    					// console.log("process8: formatNum-td2"+formatNum);
+   					//var name = list.get(formatNum);
    					Ext.fly(td).update(formatNum);
    				}
     		}
@@ -1741,15 +1753,15 @@
 
     		
     		var t8 = new Ext.util.TaskRunner();
-    		Ext.get('fbtn00').on('click',function(){if(theFirstPrize.length >= 50){return;}t8.stop(f00);addLuckyNumber8('f00');setTimeout("Ext.getDom('fbtn01').click()",500);});
-    		Ext.get('fbtn01').on('click',function(){if(theFirstPrize.length >= 50){return;}t8.stop(f01);addLuckyNumber8('f01');setTimeout("Ext.getDom('fbtn02').click()",500);});
-    		Ext.get('fbtn02').on('click',function(){if(theFirstPrize.length >= 50){return;}t8.stop(f02);addLuckyNumber8('f02');setTimeout("Ext.getDom('fbtn03').click()",500);});
-    		Ext.get('fbtn03').on('click',function(){if(theFirstPrize.length >= 50){return;}t8.stop(f03);addLuckyNumber8('f03');setTimeout("Ext.getDom('fbtn04').click()",500);});
-    		Ext.get('fbtn04').on('click',function(){if(theFirstPrize.length >= 50){return;}t8.stop(f04);addLuckyNumber8('f04');setTimeout("Ext.getDom('fbtn05').click()",500);});
-    		Ext.get('fbtn05').on('click',function(){if(theFirstPrize.length >= 50){return;}t8.stop(f05);addLuckyNumber8('f05');setTimeout("Ext.getDom('fbtn06').click()",500);});
-    		Ext.get('fbtn06').on('click',function(){if(theFirstPrize.length >= 50){return;}t8.stop(f06);addLuckyNumber8('f06');setTimeout("Ext.getDom('fbtn07').click()",500);});
-    		Ext.get('fbtn07').on('click',function(){if(theFirstPrize.length >= 50){return;}t8.stop(f07);addLuckyNumber8('f07');setTimeout("Ext.getDom('fbtn08').click()",500);});
-    		Ext.get('fbtn08').on('click',function(){if(theFirstPrize.length >= 50){return;}t8.stop(f08);addLuckyNumber8('f08');setTimeout("Ext.getDom('fbtn09').click()",500);});
+    		Ext.get('fbtn00').on('click',function(){if(theFirstPrize.length >= 50){return;}t8.stop(f00);addLuckyNumber8('f00');setTimeout("Ext.getDom('fbtn01').click()",800);});
+    		Ext.get('fbtn01').on('click',function(){if(theFirstPrize.length >= 50){return;}t8.stop(f01);addLuckyNumber8('f01');setTimeout("Ext.getDom('fbtn02').click()",800);});
+    		Ext.get('fbtn02').on('click',function(){if(theFirstPrize.length >= 50){return;}t8.stop(f02);addLuckyNumber8('f02');setTimeout("Ext.getDom('fbtn03').click()",800);});
+    		Ext.get('fbtn03').on('click',function(){if(theFirstPrize.length >= 50){return;}t8.stop(f03);addLuckyNumber8('f03');setTimeout("Ext.getDom('fbtn04').click()",800);});
+    		Ext.get('fbtn04').on('click',function(){if(theFirstPrize.length >= 50){return;}t8.stop(f04);addLuckyNumber8('f04');setTimeout("Ext.getDom('fbtn05').click()",800);});
+    		Ext.get('fbtn05').on('click',function(){if(theFirstPrize.length >= 50){return;}t8.stop(f05);addLuckyNumber8('f05');setTimeout("Ext.getDom('fbtn06').click()",800);});
+    		Ext.get('fbtn06').on('click',function(){if(theFirstPrize.length >= 50){return;}t8.stop(f06);addLuckyNumber8('f06');setTimeout("Ext.getDom('fbtn07').click()",800);});
+    		Ext.get('fbtn07').on('click',function(){if(theFirstPrize.length >= 50){return;}t8.stop(f07);addLuckyNumber8('f07');setTimeout("Ext.getDom('fbtn08').click()",800);});
+    		Ext.get('fbtn08').on('click',function(){if(theFirstPrize.length >= 50){return;}t8.stop(f08);addLuckyNumber8('f08');setTimeout("Ext.getDom('fbtn09').click()",800);});
     		Ext.get('fbtn09').on('click',function(){if(theFirstPrize.length >= 50){return;}t8.stop(f09);addLuckyNumber8('f09');});
     		
     		var launchBtn8 = Ext.get('launch8');
